@@ -28,8 +28,8 @@ void CDlgScreenLayoutSettings::DoDataExchange(CDataExchange* pDX)
     DDX_Text(pDX, IDC_EDIT_ROWS, m_splitMode.rows);
     DDX_Text(pDX, IDC_EDIT_COLS, m_splitMode.cols);
 
-    DDV_MinMaxInt(pDX, m_splitMode.rows, 1, 10);
-    DDV_MinMaxInt(pDX, m_splitMode.cols, 1, 10);
+    DDV_MinMaxInt(pDX, m_splitMode.rows, 1, 20);
+    DDV_MinMaxInt(pDX, m_splitMode.cols, 1, 20);
     DDX_Radio(pDX, IDC_RADIO_SCREENTYPE_PRIMARY, (int&)m_eScreenTargetType);
 }
 
