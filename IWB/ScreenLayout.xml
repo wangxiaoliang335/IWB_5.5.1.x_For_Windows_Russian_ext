@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--所有布局-->
+<Root>
+    <!--屏幕类型-->
+    <ScreeenTargetType value="Primary Screen" />
+    <ScreenLayout split_mode="1x6">
+        <!--分割条-->
+        <SplitEdge pos="0" limit_0="0" limit_1="0" />
+        <SplitEdge pos="1" limit_0="0" limit_1="0" />
+        <SplitEdge pos="0" limit_0="0" limit_1="0" />
+        <SplitEdge pos="0.166667" limit_0="0.025" limit_1="0.025" />
+        <SplitEdge pos="0.375521" limit_0="0.025" limit_1="0.025" />
+        <SplitEdge pos="0.5" limit_0="0.025" limit_1="0.025" />
+        <SplitEdge pos="0.666667" limit_0="0.025" limit_1="0.025" />
+        <SplitEdge pos="0.833333" limit_0="0.025" limit_1="0.025" />
+        <SplitEdge pos="1" limit_0="0" limit_1="0" />
+    </ScreenLayout>
+    <ScreenLayout split_mode="2x3">
+        <!--分割条-->
+        <SplitEdge pos="0" limit_0="0" limit_1="0" />
+        <SplitEdge pos="0.402778" limit_0="0.025" limit_1="0.025" />
+        <SplitEdge pos="1" limit_0="0" limit_1="0" />
+        <SplitEdge pos="0" limit_0="0" limit_1="0" />
+        <SplitEdge pos="0.333333" limit_0="0.025" limit_1="0.025" />
+        <SplitEdge pos="0.666667" limit_0="0.025" limit_1="0.025" />
+        <SplitEdge pos="1" limit_0="0" limit_1="0" />
+    </ScreenLayout>
+    <ScreenLayout split_mode="3x2">
+        <!--分割条-->
+        <SplitEdge pos="0" limit_0="0" limit_1="0" />
+        <SplitEdge pos="0.333333" limit_0="0.025" limit_1="0.025" />
+        <SplitEdge pos="0.666667" limit_0="0.025" limit_1="0.025" />
+        <SplitEdge pos="1" limit_0="0" limit_1="0" />
+        <SplitEdge pos="0" limit_0="0" limit_1="0" />
+        <SplitEdge pos="0.5" limit_0="0.025" limit_1="0.025" />
+        <SplitEdge pos="1" limit_0="0" limit_1="0" />
+    </ScreenLayout>
+    <ScreenLayout split_mode="1x1">
+        <!--分割条-->
+        <SplitEdge pos="0" limit_0="0" limit_1="0" />
+        <SplitEdge pos="1" limit_0="0" limit_1="0" />
+        <SplitEdge pos="0" limit_0="0" limit_1="0" />
+        <SplitEdge pos="1" limit_0="0" limit_1="0" />
+    </ScreenLayout>
+    <!--Sensor个数与布局映射关系-->
+    <split_mode_map>
+        <map_entry sensor_count="1" split_mode="1x1" />
+        <map_entry sensor_count="6" split_mode="3x2" />
+    </split_mode_map>
+</Root>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<TimerActionList>
+<Action time_start="0:0:0"   time_end="12:29:59" brightness="3" gamma="140"/>
+<Action time_start="12:30:0" time_end="17:30"    brightness="100" gamma="2"/> 
+<Action time_start="17:30"   time_end="23:59:59" brightness="3" gamma="140"/>
+</TimerActionList>

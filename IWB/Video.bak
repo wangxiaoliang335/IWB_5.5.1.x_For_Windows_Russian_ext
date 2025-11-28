@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--配置文件根节点-->
+<Settings>
+    <!--全局配置参数-->
+    <Global>
+        <!--语言
+		EN:英语
+		CHS:简体中文
+		CHT:繁体中文
+		ESP:西班牙语
+		KOR:韩语
+		THA:泰语
+		VIT:越南语
+		DEU:德语
+		FRA:法语
+		ITA:意大利语
+		RUS:俄语
+		PTG:葡萄牙语-->
+        <Param name="Language" value="CHS" />
+        <!--投影模式-->
+        <Param name="ProjectionMode" value="Desktop" />
+        <!--调试模式(Yes/No)-->
+        <Param name="DebugMode" value="No" />
+        <!--调试级别(0~2)-->
+        <Param name="DebugLevel" value="0" />
+        <!--是否保存自动校正中间文件标志(Yes/No)-->
+        <Param name="SaveIntermediateFile" value="No" />
+        <!--启动时的工作模式。0:图像调试模式;1:激光器调试模式;2:正常使用模式-->
+        <Param name="LensMode" value="0" />
+        <!--是否打开TUIO触控方式-->
+        <Param name="TouchTUIOMode" value="No" />
+        <!--是否打开HID触控方式-->
+        <Param name="TouchHIDMode" value="Yes" />
+        <!--HID工作方式(Mouse; Touch Screen)-->
+        <Param name="HID Mode" value="Mouse" />
+        <!--使能在线注册功能(Yes/No)-->
+        <Param name="EnableOnlineRegister" value="Yes" />
+        <!--触屏宽高比:Auto, 16:9, 16:10, 4:3-->
+        <Param name="TouchScreenAspectRatio" value="Auto" />
+        <!--是否在自动校正过程中录像-->
+        <Param name="RecordVideo" value="No" />
+        <!--是否双屏融合-->
+        <Param name="DoubleScreenTouchMerge" value="Yes" />
+        <!--触摸屏对角线的物理尺寸,单位:英寸-->
+        <Param name="ScreenDiagonalLength" value="80.0" />
+        <!--程序启动时,搜索设备时最大允许花费的时间, 单位:毫秒-->
+        <Param name="MaxTimeInSearchDevice" value="8000" />
+        <!--是否开启单点模式-->
+        <Param name="SinglePointMode" value="No" />
+        <!--CMOS芯片信息-->
+        <CMOS_CHIP>
+            <!--像素尺寸，单位:mm-->
+            <Param name="PixelSize" value="0.006" />
+            <!--CMOS传感器图像区域物理宽度, 单位:mm-->
+            <Param name="WidthInMM" value="3.984" />
+            <!--CMOS传感器图像区域物理高度, 单位:mm-->
+            <Param name="HeightInMM" value="2.952" />
+            <!--CMOS传感器图像区域像素宽度, 单位:像素-->
+            <Param name="WidthInPixel" value="656" />
+            <!--CMOS传感器图像区域像素高度, 单位:像素-->
+            <Param name="HeightInPixel" value="488" />
+        </CMOS_CHIP>
+        <!--屏接的屏幕数目-->
+        <Param name="ScreenCount" value="6" />
+        <!--使能4点标定状态(Yes/No)-->
+        <Param name="Enable4PointCalibrate" value="No" />
+        <!--是否可以修改分辨率-->
+        <Param name="ModifyResolution" value="No" />
+        <!--是否启用隔空操作设置-->
+        <Param name="AirOperatePermission" value="No" />
+        <!--启用隔空操作后选择的点击方式-->
+        <Param name="AirOperateMode" value="Click" />
+        <!--圆形校正时，x坐标缩小到的百分比例50~100, 100为保持原尺寸-->
+        <Param name="CircleCalibrateXScale" value="100" />
+        <!--圆形校正时，y坐标缩放百分比例50~100, 100为保持原尺寸-->
+        <Param name="CircleCalibrateYScale" value="100" />
+    </Global>
+    <!--全部摄像头传感器的配置参数-->
+    <IWBSensors count="6">
+        <!--摄像头传感器的配置参数-->
+        <IWBSensor id="0">
+            <!--启动时的工作模式。0:图像调试模式;1:激光器调试模式;2:正常使用模式-->
+            <Param name="LensMode" value="0" />
+            <!--设备路径-->
+            <Param name="DevicePath" value="" />
+            <!--视频格式-->
+            <Param name="VideoFormat" value="640 X 480 MJPG" />
+            <!--镜头类型)-->
+            <Param name="LensType" value="throw ratio: 0.34" />
+            <!--传感器与屏幕关联方法(Auto/Manual)-->
+            <Param name="AutoAttachMonitor" value="Auto" />
+            <!--传感器关联的屏幕id-->
+            <Param name="AttachedMonitorId" value="0" />
+            <!--关联的屏幕区域类型(Full Screen|Left Half|Right Half-->
+            <Param name="AttachedMonitorAreaType" value="Full Screen" />
+            <!--传感器关联的屏幕区域编号-->
+            <Param name="ScreenAreaNo" value="0" />
+            <!--投影机放置方式("Desktop":桌面模式; "Wall":墙面模式-->
+            <IWBProjectionMode Mode="Desktop">
+                <!--高级设置参数-->
+                <AdvanceSettings>
+                    <!--设备触控类型("Finger_Touch_WhiteBoard":手触控电子白板; "Pen_Touch_WhiteBoard":笔触控电子白板; "Finger_Touch_Control":手指触控;"Palm_Touch_Control":手掌互动;-->
+                    <Param name="DeviceTouchType" value="Finger_Touch_WhiteBoard" />
+                    <!--是否是背投设备-->
+                    <Param name="RearProjectionDevice" value="No" />
+                    <!--干扰光斑屏蔽区膨胀半径-->
+                    <Param name="ClutterMaskingAreaInflationRadius" value="1" />
+                    <!--响应光斑大小比例-->
+                    <Param name="SpotProportion" value="30" />
+                    <!--板擦与光斑的倍数-->
+                    <Param name="EraserMultiples" value="3" />
+                    <!--检测为固定光斑的时间-->
+                    <Param name="SetFixedBlobTime" value="5" />
+                    <!--使能笔迹插值(Yes/No)-->
+                    <Param name="EnableStrokeInterpolate" value="No" />
+                    <!--是否打开动态屏蔽功能-->
+                    <Param name="DynamicMaskFrame" value="No" />
+                    <!--是否打开抗干扰功能-->
+                    <Param name="AntiJamming" value="No" />
+                    <!--是否启用手动绘制屏幕区域-->
+                    <Param name="OnLineScreenArea" value="No" />
+                    <!--是否去掉反射点响应功能-->
+                    <Param name="DisableReflectionSpot" value="No" />
+                    <!--设置平滑系数-->
+                    <Param name="SetSmoothCoefficient" value="0" />
+                    <!--使能屏幕物理尺寸, 屏幕显示畸变严重时使用(Yes/No)-->
+                    <Param name="UsingScreenPhysicalDimensions" value="No" />
+                    <!--屏幕宽度，单位:毫米-->
+                    <Param name="ScreenPhysicalWidth" value="1920" />
+                    <!--屏幕高度，单位:毫米-->
+                    <Param name="ScreenPhysicalHeight" value="1080" />
+                </AdvanceSettings>
+                <!--手动校正参数-->
+                <ManualCalibrate>
+                    <!--手动校正每行的校正点个数(=列数),最小值=2-->
+                    <Param name="ManualCalibratePtNumInEachRow" value="5" />
+                    <!--//手动校正每行的校正点个数(=列数),最小值=2-->
+                    <Param name="ManualCalibratePtNumInEachCol" value="5" />
+                </ManualCalibrate>
+                <!--自动校正参数-->
+                <AutoCalibratePattern>
+                    <!--自动校正图案行数, 范围(5~17)-->
+                    <Param name="PatternRowCount" value="5" />
+                </AutoCalibratePattern>
+                <!--校正方程参数-->
+                <CalibateEquationParams>
+                    <!--校正图片尺寸-->
+                    <Param name="ImageWidth" value="640" />
+                    <Param name="ImageHeight" value="480" />
+                    <!--CalibrateModel(0 -- Generic Camera Model,1 -- 4-points Perspective Camera Model)-->
+                    <Param name="CalibrateModel" value="0" />
+                    <!--校正类型(手动:Manual, 自动:Auto)-->
+                    <Param name="CalibrateType" value="Auto" />
+                    <!--使能屏幕物理尺寸, 屏幕显示畸变严重时使用(Yes/No)-->
+                    <Param name="UsingScreenPhysicalDimensions" value="No" />
+                    <!--屏幕宽度，单位:毫米-->
+                    <Param name="ScreenPhysicalWidth" value="0" />
+                    <!--屏幕高度，单位:毫米-->
+                    <Param name="ScreenPhysicalHeight" value="0" />
+                    <!--所有监视器校正参数-->
+                    <AllMonitorCalibCoefficients count="0" />
+                </CalibateEquationParams>
+            </IWBProjectionMode>
+            <IWBProjectionMode Mode="Wall">
+                <!--高级设置参数-->
+                <AdvanceSettings>
+                    <!--设备触控类型("Finger_Touch_WhiteBoard":手触控电子白板; "Pen_Touch_WhiteBoard":笔触控电子白板; "Finger_Touch_Control":手指触控;"Palm_Touch_Control":手掌互动;-->
+                    <Param name="DeviceTouchType" value="Finger_Touch_WhiteBoard" />
+                    <!--是否是背投设备-->
+                    <Param name="RearProjectionDevice" value="No" />
+                    <!--干扰光斑屏蔽区膨胀半径-->
+                    <Param name="ClutterMaskingAreaInflationRadius" value="1" />
+                    <!--响应光斑大小比例-->
+                    <Param name="SpotProportion" value="30" />
+                    <!--板擦与光斑的倍数-->
+                    <Param name="EraserMultiples" value="3" />
+                    <!--检测为固定光斑的时间-->
+                    <Param name="SetFixedBlobTime" value="5" />
+                    <!--使能笔迹插值(Yes/No)-->
+                    <Param name="EnableStrokeInterpolate" value="No" />
+                    <!--是否打开动态屏蔽功能-->
+                    <Param name="DynamicMaskFrame" value="No" />
+                    <!--是否打开抗干扰功能-->
+                    <Param name="AntiJamming" value="No" />
+                    <!--是否启用手动绘制屏幕区域-->
+                    <Param name="OnLineScreenArea" value="No" />
+                    <!--是否去掉反射点响应功能-->
+                    <Param name="DisableReflectionSpot" value="No" />
+                    <!--设置平滑系数-->
+                    <Param name="SetSmoothCoefficient" value="0" />
+                    <!--使能屏幕物理尺寸, 屏幕显示畸变严重时使用(Yes/No)-->
+                    <Param name="UsingScreenPhysicalDimensions" value="No" />
+                    <!--屏幕宽度，单位:毫米-->
+                    <Param name="ScreenPhysicalWidth" value="1920" />
+                    <!--屏幕高度，单位:毫米-->
+                    <Param name="ScreenPhysicalHeight" value="1080" />
+                </AdvanceSettings>
+                <!--手动校正参数-->
+                <ManualCalibrate>
+                    <!--手动校正每行的校正点个数(=列数),最小值=2-->
+                    <Param name="ManualCalibratePtNumInEachRow" value="5" />
+                    <!--//手动校正每行的校正点个数(=列数),最小值=2-->
+                    <Param name="ManualCalibratePtNumInEachCol" value="5" />
+                </ManualCalibrate>
+                <!--自动校正参数-->
+                <AutoCalibratePattern>
+                    <!--自动校正图案行数, 范围(5~17)-->
+                    <Param name="PatternRowCount" value="5" />
+                </AutoCalibratePattern>
+                <!--校正方程参数-->
+                <CalibateEquationParams>
+                    <!--校正图片尺寸-->
+                    <Param name="ImageWidth" value="640" />
+                    <Param name="ImageHeight" value="480" />
+                    <!--CalibrateModel(0 -- Generic Camera Model,1 -- 4-points Perspective Camera Model)-->
+                    <Param name="CalibrateModel" value="0" />
+                    <!--校正类型(手动:Manual, 自动:Auto)-->
+                    <Param name="CalibrateType" value="Auto" />
+                    <!--使能屏幕物理尺寸, 屏幕显示畸变严重时使用(Yes/No)-->
+                    <Param name="UsingScreenPhysicalDimensions" value="No" />
+                    <!--屏幕宽度，单位:毫米-->
+                    <Param name="ScreenPhysicalWidth" value="0" />
+                    <!--屏幕高度，单位:毫米-->
+                    <Param name="ScreenPhysicalHeight" value="0" />
+                    <!--所有监视器校正参数-->
+                    <AllMonitorCalibCoefficients count="0" />
+                </CalibateEquationParams>
+            </IWBProjectionMode>
+        </IWBSensor>
+    </IWBSensors>
+</Settings>

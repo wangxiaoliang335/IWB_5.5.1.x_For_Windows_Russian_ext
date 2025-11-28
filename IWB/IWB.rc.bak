@@ -1,0 +1,1132 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\OpticalPen.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\OpticalPen.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_CTXMENU MENU
+BEGIN
+    POPUP "TrayCtxMenu"
+    BEGIN
+        MENUITEM "Mouse",                       ID_INSTALLATIONANDDEBUGGING_MOUSE
+        MENUITEM "Touch Screen",                ID_INSTALLATIONANDDEBUGGING_TOUCHPAD
+        MENUITEM SEPARATOR
+        MENUITEM "Run",                         ID_MENU_RUN
+        MENUITEM "Stop",                        ID_MENU_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "Auto Mask Clutter(Ctrl + Shift + A)", ID_AUTO_ADD_MASK_AREA
+        MENUITEM "Manual Calibration ...",      ID_TRAYCTXMENU_MANUALCALIBRATION
+        MENUITEM "Automatic Calibration ...",   ID_CTXMENU_AUTOCALIBRATE
+        MENUITEM SEPARATOR
+        MENUITEM "Disable Optical Pen Control(Ctrl + shift +P)", ID_MENU_DISABLE_OPTICAL_PEN_CONTROL
+        MENUITEM "Show Main Window",            ID_CTXMENU_SHOW_MAIN_WINDOW
+        MENUITEM "Auto Run At System Startup",  ID_CTXMENU_AUTORUN_AT_SYSTEM_STARTUP
+        MENUITEM "Exit",                        ID_CTXMENU_EXIT
+    END
+    POPUP "CalibrateWndCtxmenu"
+    BEGIN
+        MENUITEM "Exit Calibrating",            ID_ADJUSTWNDMENU_EXIT_ADJUST
+    END
+    POPUP "SpotSettingMenu"
+    BEGIN
+        MENUITEM "ExitSpotSetting",             ID_EXIT_BLOBSETING
+    END
+END
+
+IDR_MENU_MAIN MENU
+BEGIN
+    POPUP "Operation"
+    BEGIN
+        MENUITEM "Run",                         ID_MENU_RUN
+        MENUITEM "Stop",                        ID_MENU_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "Auto Mask Clutter(Ctrl + Shift + A)", ID_AUTO_ADD_MASK_AREA
+        POPUP "Manual Mask Area"
+        BEGIN
+            MENUITEM "Add",                         ID_ADD_MASK_RECTANGLE_2X
+            MENUITEM "Erase",                       ID_ERASE_MASK_RECTANGLE_2X
+            MENUITEM SEPARATOR
+            MENUITEM "End Editing",                 ID_MANUALMASKAREA_ENDEDITING
+        END
+        POPUP "Manually Select Screen Area"
+        BEGIN
+            MENUITEM "Start",                       ID_MENU_DRAWMASKFRAME_START
+            MENUITEM "Disable Preset ScreenArea",   ID_MENU_DRAWMASKFRAME_DISABLE
+            MENUITEM "Clear",                       ID_MENU_DRAWMASKFRAME_CLEAR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Four Corner Points Calibration", ID_MENU_FOURPOINTCALIBRATION
+        MENUITEM "Circle Screen Manual Calibrate", ID_MENU_CIRCLE_SCREEN_MANUAL_CALIBRATE
+        MENUITEM "Manual Calibration ...",      ID_MENU_MANUAL_CALIBRATE
+        MENUITEM "Automatic Calibration ...",   ID_MENU_AUTO_CALIBRATE
+        MENUITEM "Lightspot Sampling...",       ID_OPERATION_LIGHTSPOTSAMPLING
+        MENUITEM SEPARATOR
+        MENUITEM "Disable Optical Pen Control(Ctrl + Shift + P)", ID_MENU_DISABLE_OPTICAL_PEN_CONTROL
+        MENUITEM "Exit",                        ID_MENU_EXIT
+    END
+    POPUP "Installation and Debugging"
+    BEGIN
+        MENUITEM "1.Tuning Webcam Image Mode",  ID_WORKMODE_IMAGE_TUNNING
+        MENUITEM "2.Tuning Laser Transmitter Image Mode", ID_WORKMODE_LASER_TUNNING
+        MENUITEM "3.Normal Usage Image Mode",   ID_WORKMODE_NORMAL_USAGE
+        MENUITEM SEPARATOR
+        MENUITEM "Mouse",                       ID_INSTALLATIONANDDEBUGGING_MOUSE
+        MENUITEM "Touch Screen",                ID_INSTALLATIONANDDEBUGGING_TOUCHPAD
+        MENUITEM "Advances Settings...",        ID_MENU_ADVANCESSETTING
+        MENUITEM SEPARATOR
+        POPUP "Touch Screen Aspect Ratio"
+        BEGIN
+            MENUITEM "Auto",                        ID_TOUCHSCREENASPECTRATIO_AUTO
+            MENUITEM "16:9",                        ID_TOUCHSCREENASPECTRATIO_16_09
+            MENUITEM "16:10",                       ID_TOUCHSCREENASPECTRATIO_16_10
+            MENUITEM "4:3",                         ID_TOUCHSCREENASPECTRATIO_4_3
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Stroke interpolation",        ID_INSTALLATIONANDDEBUGGING_ENABLEINTERPOLATE
+        MENUITEM SEPARATOR
+        MENUITEM "Update Firmware ...",         ID_INSTALLATIONANDDEBUGGING_UPDATEFIRMWARE
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "Language Options...",         ID_LANG_SELECT
+        MENUITEM SEPARATOR
+        MENUITEM "About...",                    ID_MENU_ABOUT
+        MENUITEM "Register...",                 ID_MENU_ONLINE_REGISTER
+    END
+END
+
+IDR_MENU_MANUAL_SREEN_AREA_SETTINGS MENU
+BEGIN
+    POPUP "Manually Specify The Screen Area"
+    BEGIN
+        MENUITEM "End Screen Mask Area Edit",   ID_END_MASK_AREA_EDIT
+    END
+END
+
+IDR_MENU_MANUAL_CORRECT_CTXMENU MENU
+BEGIN
+    POPUP "Manual Correct Contex Menu"
+    BEGIN
+        MENUITEM "Exit Manula Correct...",      ID_ABORT_MANUAL_CORRECT
+    END
+END
+
+IDR_MENU_SENSOR_CTX MENU
+BEGIN
+    POPUP "SensorCtxMenu"
+    BEGIN
+        MENUITEM "Run",                         ID_SENSORCTXMENU_RUN
+        MENUITEM "Stop",                        ID_SENSORCTXMENU_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "Disable",                     ID_SENSORCTXMENU_DISABLE
+        MENUITEM SEPARATOR
+        MENUITEM "Auto Calibrate",              ID_SENSORCTXMENU_AUTO_CALIBRATE
+        MENUITEM "Manual Calibrate",            ID_SENSORCTXMENU_MANUAL_CALIBRATE
+        MENUITEM SEPARATOR
+        MENUITEM "Auto Mask",                   ID_SENSORCTXMENU_AUTOMASK
+        MENUITEM "Parameter Settings...",       ID_SENSORCTXMENU_IMAGE_SENSOR_SETTINGS
+        MENUITEM "Light Spot Sampling",         ID_SENSORCTXMENU_LIGHTSPOT_SAMPLING
+        POPUP "Manually Select Screen Area"
+        BEGIN
+            MENUITEM "Start",                       ID_SENSORCTXMENU_DRAWMASKFRAME_START
+            MENUITEM "Disable Preset ScreenArea",   ID_SENSORCTXMENU_DRAWMASKFRAME_DISABLE
+            MENUITEM "Clear",                       ID_SENSORCTXMENU_DRAWMASKFRAME_CLEAR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Installation wizard",         ID_SENSORCTXMENU_INSTALL_TIP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 5,5,2,0
+ PRODUCTVERSION 5,5,2,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "FileDescription", "Laser Touch Calibration System "
+            VALUE "FileVersion", "5.6.0.0"
+            VALUE "InternalName", "Optical Pen"
+            VALUE "OriginalFilename", "OpticalPen.exe"
+            VALUE "ProductName", "Laser Touch  Calibration System"
+            VALUE "ProductVersion", "5.6.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_DRAW_SCREEN_AREA CURSOR                  "res\\cursor_DrawScreenArea.cur"
+
+IDC_CURSOR_SPLIT_HORZ   CURSOR                  "res\\Cursor_SplitHorz.cur"
+
+IDC_CURSOR_SPLIT_VERT   CURSOR                  "res\\Cursor_SplitVert.cur"
+
+IDC_CURSOR_HAND         CURSOR                  "res\\hand.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_ERASER_1X    BITMAP                  "res\\16X16\\Eraser.bmp"
+
+IDB_BITMAP_ERASER_2X    BITMAP                  "res\\24X24\\Eraser.bmp"
+
+IDB_BITMAP_ERASER_3X    BITMAP                  "res\\32X32\\Eraser.bmp"
+
+IDB_BITMAP_ERASER_4X    BITMAP                  "res\\48X48\\Eraser.bmp"
+
+IDB_BITMAP_BRUSH_1X     BITMAP                  "res\\16X16\\Brush.bmp"
+
+IDB_BITMAP_BRUSH_2X     BITMAP                  "res\\24X24\\Brush.bmp"
+
+IDB_BITMAP_BRUSH_3X     BITMAP                  "res\\32X32\\Brush.bmp"
+
+IDB_BITMAP_BRUSH_4X     BITMAP                  "res\\48X48\\Brush.bmp"
+
+IDB_BITMAP_ARROW_TOP_RIGHT_CORNER BITMAP                  "res\\Arrows\\top_right.bmp"
+
+IDB_BITMAP_ARROW_TOP_LEFT_CORNER BITMAP                  "res\\Arrows\\top_left.bmp"
+
+IDB_BITMAP_ARROW_BOTTOM_LEFT_CORNER BITMAP                  "res\\Arrows\\bottom_left.bmp"
+
+IDB_BITMAP_ARROW_BOTTOM_RIGHT_CORNER BITMAP                  "res\\Arrows\\bottom_right.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_SCREENLAYOUT_SETTINGS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_STRING102           "Hardware Key Is Missing!"
+    IDS_STRING103           "Error Prompt"
+    IDS_STRING104           "End Calibrating? Press Cancel To Do Calibrating Again."
+    IDS_STRING105           "Confirmation"
+    IDS_STRING106           "Another Instance Is Running!"
+    IDS_STRING107           "Prompt Information"
+    IDS_STRING108           "Calibration Failed! Please Try Again."
+    IDS_STRING109           "Error!"
+    IDS_STRING110           "The Modification Will Take Effect In Next Time Startup."
+    IDS_STRING111           "Please Click <Left-Top> Cross Symbol."
+    IDS_STRING112           "Please Click <Middle-Top> Cross Symbol."
+    IDS_STRING113           "Please Click <Right-Top> Cross Symbol."
+    IDS_STRING114           "Please Click <Middel Left> Cross Symbol."
+    IDS_STRING115           "Please Click <Middle> Cross Symbol."
+    IDS_STRING116           "Please Click <Middle Right> Cross Symbol."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING117           "Please Click <Left-Bottom> Cross Symbol."
+    IDS_STRING118           "Please Click <Middle-Bottom> Cross Symbol."
+    IDS_STRING119           "Please Click <Right-Bottom> Cross Symbol."
+    IDS_STRING120           "The Specified USB Camera Is Missing! Please Plug In The USB Camera."
+    IDS_STRING121           "The Automatic Calibration Failed!"
+    IDS_STRING122           "The Automatic Calibration Failed! The Number Of Valid Calibrate Cell Is Less Than 36."
+    IDS_STRING123           "Whiteboard Calibration Program"
+    IDS_STRING124           "Whiteboard Optical Pen Calibration Program"
+    IDS_STRING125           "Is not valid Usb Key for hand touch whiteboard!"
+    IDS_STRING126           "The Optical Pen Is Disabled For Some Clutter Was Found When The Program Was Starting!"
+    IDS_STRING426           "Please Click The Flashing  Point On The Tip Of the Arrow."
+    IDS_STRING427           "Are you sure to exit manual correct intervention!"
+    IDS_STRING428           "Are you sure to exit the setting  spot ,please Click <cancel> when resetting"
+    IDS_STRING429           "not be zero on coordinates or area,please re-enter"
+    IDS_STRING430           "Are you sure to resetting information on spot ?"
+    IDS_STRING431           "You Click is not any location of the symbol ,please  re-enter "
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING432           "Please Click  twinkling the symbol on the screen to get the size of spot"
+    IDS_STRING433           "Please Click the symbol to Set the coordinates and the size of spot "
+    IDS_STRING127           "IWB"
+    IDS_STRING434           "The Optical Pen Is Disabled For Some Big Clutter Was Found When The Program Was Running!"
+    IDS_STRING436           "Failed  to play video!"
+    IDS_STRING437           "You Are Not Authorized Use The Finger Touch Function !"
+    IDS_STRING438           "FPS"
+    IDS_STRING439           "Status"
+    IDS_STRING440           "Dongle Status"
+    IDS_STRING441           "Status"
+    IDS_STRING442           "Status: Running."
+    IDS_STRING443           "Status: Play Video Failed"
+    IDS_STRING444           "Status: Stop."
+    IDS_STRING445           "Status: Device is missing."
+    IDS_STRING446           "Image Sensor"
+    IDS_STRING447           "Finish Mask Area Editing"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING448           "Swap Image(\\u2190\\u2192)"
+    IDS_STRING449           "OK"
+    IDS_STRING450           "Apply"
+    IDS_STRING451           "Cancel"
+    IDS_STRING452           "Parameter Settings"
+    IDS_STRING453           "Parameter Settings..."
+    IDS_STRING454           "Device is Missing"
+    IDS_STRING455           "Registration Succeeded."
+    IDS_STRING456           "Unregistered"
+    IDS_STRING457           "Registration Failed"
+    IDS_STRING458           "Using Hardware Key"
+    IDS_STRING459           "Touch Type"
+    IDS_STRING460           "Pen Touch on WhiteBoard"
+    IDS_STRING461           "Finger Touch on WhiteBoard"
+    IDS_STRING462           "Screen Type"
+    IDS_STRING463           "Single Screen"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING464           "%d Screens Fusion"
+    IDS_STRING465           "Please align the video image of the projector in the red guide box during installation."
+    IDS_STRING466           "No UVC device exists!"
+    IDS_STRING467           "Firmware file %s not found!"
+    IDS_STRING468           "Error: Open firmware file failed with error 0x%x!"
+    IDS_STRING469           "Write firmware ""%s"" succeeded. \r\n Please unplug then plug in the device again."
+    IDS_STRING470           "Write firmware failed."
+    IDS_STRING471           "Read firmware succeeded."
+    IDS_STRING472           "The firmware content is consistent with file ""%s""."
+    IDS_STRING473           "No file found to match the firmware. "
+    IDS_STRING474           "Error:read firmware failed!"
+    IDS_STRING475           "Save to local file %s."
+    IDS_STRING476           "Dongle is Ok"
+    IDS_STRING477           "Dongle is Missing"
+    IDS_STRING478           "Sorry! Software trial time expired. Please restart the application."
+    IDS_STRING479           "Notification"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING480           "Auto Calibration Failed!"
+    IDS_STRING481           "Auto Calibration Succeeded."
+    IDS_STRING482           "Touch Screen Layout Designer..."
+    IDS_STRING483           "Number Of Spliced Screens"
+    IDS_STRING484           "1 Screens"
+    IDS_STRING485           "2 Screens"
+    IDS_STRING486           "3 Screens"
+    IDS_STRING487           "4 Screens"
+    IDS_STRING488           "5 Screens"
+    IDS_STRING489           "6 Screens"
+    IDS_STRING490           "7 Screens"
+    IDS_STRING491           "8 Screens"
+    IDS_STRING492           "9 Screens"
+    IDS_STRING493           "10 Screens"
+    IDS_STRING494           "The mouse ""presses"" to get the target point, drags the mouse to the next point, and ""doubleclicks"" to finish the masking map."
+    IDS_STRING495           "Finger Touch interaction"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING496           "Plam Touch interaction"
+    IDS_STRING497           "Dongle list :"
+    IDS_STRING498           "Firmware lens parameters"
+    IDS_STRING499           "Change Screen Area"
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_SEPARATE_OPERATION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ATTACH_SCREEN AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ONLINE_REGISTER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_UPDATE_FIRMWARE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ADANCEDSETTINGS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DLG_ADDEXCEPTION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ADVANCED_SETTINGS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_GLBGRSETING AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTBOX_NEUTRAL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_GESTURE_SETTINGS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OPTICALPEN_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_SCREENLAYOUT_SETTINGS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_SEPARATE_OPERATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_OPTICALPEN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 521
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 343
+    END
+
+    IDD_DIALOG_PARAMETER_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 455
+        BOTTOMMARGIN, 352
+    END
+
+    IDD_DIALOG_STATUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        VERTGUIDE, 57
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+        HORZGUIDE, 21
+        HORZGUIDE, 40
+    END
+
+    IDD_LANGUAGE_SELECT_DLG, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_SIMULATE_CALIBRATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 366
+        VERTGUIDE, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_SPOTSETTING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_WGRCONFIGTESTDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 325
+    END
+
+    IDD_DLG_ADDEXCEPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_DIALOG_GLBGRSETING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_DIALOG_DEBUG_VIDEO_LOADER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 31
+        HORZGUIDE, 28
+        HORZGUIDE, 56
+    END
+
+    IDD_DIALOG_GESTURE_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 347
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_DIALOG_ONLINE_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_DIALOG_ATTACH_SCREEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_DIALOG_UPDATE_FIRMWARE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+        HORZGUIDE, 27
+    END
+
+    IDD_DIALOG_ADANCEDSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 130
+        HORZGUIDE, 53
+        HORZGUIDE, 79
+    END
+
+    IDD_DIALOG_ADVANCED_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 450
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        VERTGUIDE, 8
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_ABOUTBOX_NEUTRAL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_DIALOG_SCREENLAYOUT_SETTINGS, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_SEPARATE_OPERATION DIALOGEX 0, 0, 351, 160
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Separate Operation Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Air operation",IDC_STATIC,7,5,330,58
+    CONTROL         "Enable Air Operation",IDC_CHECK_AIROPERATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,24,82,10
+    CONTROL         "Left Click",IDC_RADIO_CLICK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,176,42,45,10
+    CONTROL         "Left Double Click",IDC_RADIO_DOUBLECLICK,"Button",BS_AUTORADIOBUTTON,230,41,69,10
+    LTEXT           "Trigger State When Light Spot Disappears",IDC_STATIC,23,41,135,8
+END
+
+IDD_OPTICALPEN_DIALOG DIALOGEX 0, 0, 528, 350
+STYLE DS_SETFONT | DS_NOIDLEMSG | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Laser Touch Calibration Program (Version 5.6.0.0)"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_PARAMETER_SETTINGS DIALOGEX 0, 0, 462, 355
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parameter Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,146,338,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,233,338,50,14
+    COMBOBOX        IDC_COMBO_CAMERA_LIST,64,11,124,12,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Video Device List",IDC_STATIC,8,14,54,8
+    LTEXT           "Video Format List",IDC_STATIC,8,27,56,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_VIDEO_FORMAT,64,25,124,12,CBS_DROPDOWN | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Video",IDC_STATIC,7,0,182,37
+    CONTROL         "",IDC_SLIDER_DETECT_THRESHOLD,"msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | TBS_TOP | WS_TABSTOP,65,60,28,277
+    LTEXT           "Optical Pen Detect Sensitivity",IDC_STATIC,7,42,102,11
+    LTEXT           "10(High)",IDC_STATIC_MAX_SENSITIVE_VAL,38,63,28,11
+    LTEXT           "0(Low)",IDC_STATIC_MIN_SENSITIVE_VAL,38,324,23,11
+    LTEXT           "00",IDC_STATIC_THRESHOLD_VALUE,69,50,19,9,WS_BORDER
+    LTEXT           "Recommended ?",IDC_STATIC_RECOMMEND_THRESHOLD_VAL,7,272,57,10
+    LTEXT           "Gamma Value",IDC_STATIC,121,42,46,11
+    CONTROL         "",IDC_SLIDER_GAMMA,"msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | TBS_TOP | WS_TABSTOP,141,60,28,277
+    LTEXT           "00",IDC_STATIC_GAMMA_VALUE,142,51,19,9,WS_BORDER
+    LTEXT           "100(High)",IDC_STATIC_MAX_GAMMA_VAL,108,62,33,11
+    LTEXT           "46(Low)",IDC_STATIC_MIN_GAMMA_VAL,113,324,28,11
+    PUSHBUTTON      "Default Setting",IDC_BUTTON_DEFAULT_SETTING,263,165,75,18
+    PUSHBUTTON      "Advanced Settings...",IDC_BUTTON_ADVANCED_SETTINGS,347,165,75,18
+END
+
+IDD_DIALOG_STATUS DIALOGEX 0, 0, 316, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Status Window"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "AVG(FPS)",IDC_STATIC,7,13,32,8
+    LTEXT           "Realtime FPS",IDC_STATIC,7,32,42,8
+    LTEXT           "0.0",IDC_STATIC_AVG_FPS,57,13,70,8
+    LTEXT           "0.0",IDC_STATIC_REALTIME_FPS,57,32,70,8
+END
+
+IDD_LANGUAGE_SELECT_DLG DIALOGEX 0, 0, 186, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UI Language Option"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,47,66,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,107,66,50,14
+    LISTBOX         IDC_LIST_LANGUAGES,7,7,172,53,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_SIMULATE_CALIBRATION DIALOGEX 0, 0, 373, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Simulate Calibrating"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "The Calibration AVI File:",IDC_STATIC,7,7,85,8
+    EDITTEXT        IDC_EDIT_AVI_FILE_PATH,7,32,359,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BUTTON_BROWSE_FOR_FILE_PATH,7,17,50,14
+    LTEXT           "Calibration Type:",IDC_STATIC,7,55,56,8
+    COMBOBOX        IDC_COMBO_CALIBRATION_TYPE,67,52,128,102,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Ok",IDOK,116,90,33,14
+    PUSHBUTTON      "Cancel",IDCANCEL,157,90,33,14
+    LTEXT           "Screen Width",IDC_STATIC,215,54,46,8
+    LTEXT           "Screen Height",IDC_STATIC,215,67,46,8
+    EDITTEXT        IDC_EDIT_SCREEN_CX,271,50,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCREEN_CY,271,65,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_IMAGE_BRIGHTNESS,272,81,40,14,ES_AUTOHSCROLL
+    LTEXT           "Image Brightness",IDC_STATIC,215,84,56,8
+    CONTROL         "Sensor 1",IDC_RADIO_SENSOR1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,104,7,44,10
+    CONTROL         "Sensor 2",IDC_RADIO_SENSOR2,"Button",BS_AUTORADIOBUTTON,173,7,44,10
+END
+
+IDD_SPOTSETTING_DIALOG DIALOGEX 0, 0, 236, 75
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Spot Setting Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,124,54,30,14
+    PUSHBUTTON      "Cancel",IDCANCEL,175,54,27,14
+    LTEXT           "Enter X Coordinate Value:",IDC_STATIC,17,12,88,8
+    LTEXT           "Enter Y Coordinate Value:",IDC_STATIC,17,26,88,8
+    LTEXT           "Enter The Maxinum Value of The Spot Coordinates:",IDC_STATIC,17,40,164,8
+    EDITTEXT        IDC_X_EDIT,106,11,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y_EDIT,106,25,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_S_EDIT,184,38,38,13,ES_AUTOHSCROLL
+END
+
+IDD_WGRCONFIGTESTDEMO_DIALOG DIALOGEX 0, 0, 320, 332
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Gesture Recognition Config"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,88,311,50,14
+    PUSHBUTTON      "Exit",IDCANCEL,181,311,50,14
+    CONTROL         "General",IDC_RADIO_GENERAL,"Button",BS_AUTORADIOBUTTON,16,14,39,10
+    CONTROL         "Exceptional",IDC_RADIO_Exceptional,"Button",BS_AUTORADIOBUTTON,68,14,53,10
+    GROUPBOX        "Palm-Based Gesture",IDC_STATIC_FRAME1,15,33,288,60
+    CONTROL         "Start All Palm-Based Gesture",IDC_CHK_PALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,46,107,10
+    CONTROL         "Close Current Window",IDC_CHK_PCLSWND,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,24,77,87,10
+    CONTROL         "",IDC_STATIC_LINE1,"Static",SS_BLACKRECT,17,58,284,1
+    CONTROL         "Title All Windows on Desktop",IDC_CHK_PTITLEWNDS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,177,61,107,10
+    CONTROL         "Move Current Window",IDC_CHK_PMOVWND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,61,87,10
+    CONTROL         "Refresh Current Window",IDC_CHK_PREFWND,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,177,77,95,10
+    GROUPBOX        "Finger-Based Gesture",IDC_STATIC_FRAME2,15,103,288,74
+    CONTROL         "Start All Finger-Based Gesture",IDC_CHK_FALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,116,113,10
+    CONTROL         "Mouse Wheel",IDC_CHK_FMOUWHEEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,131,59,10
+    CONTROL         "",IDC_STATIC_LINE2,"Static",SS_BLACKRECT,17,127,284,1
+    CONTROL         "Show Desktop",IDC_CHK_FDISDESKTOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,177,131,61,10
+    CONTROL         "Maximize/Restore Current Window",IDC_CHK_FMAXICURWND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,147,127,10
+    CONTROL         "Minimize Current Window",IDC_CHK_FMINICURWND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,177,147,96,10
+    CONTROL         "Switch Window",IDC_CHK_FSWITCHWND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,163,64,10
+    GROUPBOX        "Exceptional List",IDC_STATIC_Frame3,15,185,288,84
+    CONTROL         "",IDC_STATIC_LINE3,"Static",SS_BLACKRECT,7,27,306,1
+    CONTROL         "",IDC_LIST_EXCEPTION,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,18,195,282,57
+    PUSHBUTTON      "Add Excetion",IDC_BTN_ADDEXCEPTION,69,254,59,14
+    PUSHBUTTON      "Delete Excetion",IDC_BTN_DELEXCEPTION,191,254,59,14
+    GROUPBOX        "Other Setting",IDC_STATIC,15,277,288,28
+    CONTROL         "Start Log",IDC_CHK_LOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,290,45,10
+END
+
+IDD_DLG_ADDEXCEPTION DIALOGEX 0, 0, 209, 80
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,37,59,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,122,59,50,14
+    LTEXT           "Process Name:",IDC_STATIC,25,18,48,8
+    LTEXT           "Application Name:",IDC_STATIC,25,39,58,8
+    EDITTEXT        IDC_EDIT_APPNAME,93,36,95,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_PROCNAMES,93,15,95,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_GLBGRSETING DIALOGEX 0, 0, 251, 65
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GLBoard Gesture Recognition Setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,81,47,50,14
+    PUSHBUTTON      "Exit",IDCANCEL,182,47,50,14
+    CONTROL         "Start GLBoard Gesture Recognition",IDC_CHECK_STARTGLBGR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,9,127,10
+    LTEXT           "Eraser in multiples of spot (3 ~ 7)",IDC_STATIC,28,26,108,8
+    EDITTEXT        IDC_EDIT_MULT_ERASER,189,23,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_MULT_ERASER,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,219,23,11,14
+END
+
+IDD_DIALOG_DEBUG_VIDEO_LOADER DIALOGEX 0, 0, 381, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Vedio Selection"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,275,77,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,324,77,50,14
+    LTEXT           "Video For Sensor1",IDC_STATIC,7,15,59,8
+    LTEXT           "Video For Sensor2",IDC_STATIC,7,48,59,8
+    EDITTEXT        IDC_EDIT1,71,14,252,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,68,42,254,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Load...",IDC_BUTTON_FILE_SELECT_01,324,14,50,14
+    PUSHBUTTON      "Load...",IDC_BUTTON_FILE_SELECT_2,324,42,50,14
+END
+
+IDD_DIALOG_GESTURE_SETTINGS DIALOGEX 0, 0, 349, 194
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Gesture Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Windows Gesture Settings",IDC_STATIC,7,7,336,68
+    CONTROL         "Start All Windows Gesture",IDC_CHECK_SALLWGESTURE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,23,99,10
+    LTEXT           "Palm in multiples of spot (3 ~ 7)",IDC_STATIC,18,41,244,8
+    EDITTEXT        IDC_EDIT_PBGRRATE,280,37,67,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_PBGRRATE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,337,36,10,14
+    PUSHBUTTON      "More Windows Gesture Settings ...",IDC_BUTTON_WGRMORE,206,57,141,14
+    GROUPBOX        "GLBoard Gesture Settings",IDC_STATIC,7,98,336,68
+    CONTROL         "Start All GLBoard Gesture",IDC_CHECK_SALLGLBGESTURE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,114,97,10
+    LTEXT           "Eraser in multiples of spot (3 ~ 7)",IDC_STATIC,18,133,207,8
+    EDITTEXT        IDC_EDIT_ERASERRRATE,280,129,59,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_ERASERRRATE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,328,128,10,14
+    PUSHBUTTON      "More GLBoard Gesture Settings ...",IDC_BUTTON_GLBGRMORE,200,149,141,14,WS_DISABLED
+END
+
+IDD_DIALOG_ONLINE_REGISTER DIALOGEX 0, 0, 261, 211
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Online Register"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Online Register",IDC_BUTTON_ONLINE_REGISTER,59,190,68,14
+    PUSHBUTTON      "Cancel",IDCANCEL,127,190,50,14
+    LTEXT           "Serial Number:",IDC_STATIC,7,7,48,8
+    EDITTEXT        IDC_EDIT_SN_NUMBER,56,7,120,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_ONLINE_REGISTER_INFO,7,22,247,166,WS_BORDER
+END
+
+IDD_DIALOG_ATTACH_SCREEN DIALOGEX 0, 0, 325, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Attach To A Screen"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,120,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,268,120,50,14
+    CONTROL         "Auto attach",IDC_CHECK_AUTO_ATTACH_SCREEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,8,142,17
+    CONTROL         "Monitor 1",IDC_RADIO_MONITOR01,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,38,46,10
+    CONTROL         "Monitor 2",IDC_RADIO_MONITOR02,"Button",BS_AUTORADIOBUTTON,61,38,46,10
+    CONTROL         "Monitor 3",IDC_RADIO_MONITOR03,"Button",BS_AUTORADIOBUTTON,119,38,46,10
+    CONTROL         "Monitor 4",IDC_RADIO_MONITOR04,"Button",BS_AUTORADIOBUTTON,178,39,46,10
+    GROUPBOX        "Select a monitor",IDC_STATIC,7,24,311,36
+    GROUPBOX        "Area type",IDC_STATIC,7,74,311,40
+    CONTROL         "Full screen",IDC_RADIO_AREA_FULL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,90,46,10
+    CONTROL         "Left half screen",IDC_RADIO_AREA_LEFT_HALF,"Button",BS_AUTORADIOBUTTON,71,90,71,10
+    CONTROL         "Right half screen",IDC_RADIO_AREA_RIGHT_HALF,"Button",BS_AUTORADIOBUTTON,159,90,75,10
+    CONTROL         "Double Screen Touch Merge",IDC_CHECK_DOUBLE_SCREEN_TOUCH_MERGE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,200,11,118,10
+END
+
+IDD_DIALOG_UPDATE_FIRMWARE DIALOGEX 0, 0, 393, 144
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Update Firmware"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Browser...",IDC_BUTTON_BROWSER_FIRMWARE_FILE,340,7,50,14
+    EDITTEXT        IDC_EDIT_FIRMWARE_FILE_PATH,51,6,283,14,ES_AUTOHSCROLL
+    LTEXT           "Firmware File",IDC_STATIC,6,6,43,14
+    PUSHBUTTON      "Read Firmware",IDC_BUTTON_READ_FIRMWARE,77,27,88,17
+    PUSHBUTTON      "Write Firmware",IDC_BUTTON_WRITE_FIRMWARE,207,27,66,17
+    EDITTEXT        IDC_EDIT_RESULT,7,58,383,62,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "Log",IDC_STATIC,7,47,32,8
+    PUSHBUTTON      "Clear Log",IDC_BUTTON_CLEAR_RESULT,294,119,96,18
+END
+
+IDD_DIALOG_ADANCEDSETTINGS DIALOGEX 0, 0, 211, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Advance Settings Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,80,119,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,150,119,50,14
+    COMBOBOX        IDC_CAMERAFMT_COMBO,91,97,92,42,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Set Camera Format:",IDC_STATIC,16,100,65,8
+    LTEXT           "Touch Mode:",IDC_STATIC,15,18,42,8
+    CONTROL         "HID Mode",IDC_CHECK_HID,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,65,17,47,10
+    CONTROL         "TUIO Mode",IDC_CHECK_TUIO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,17,52,10
+    LTEXT           "TUIO IP:",IDC_STATIC,17,37,29,8
+    CONTROL         "",IDC_IPADDRESS_IP,"SysIPAddress32",WS_TABSTOP,65,35,72,13
+    LTEXT           ":",IDC_STATIC,140,37,8,8
+    EDITTEXT        IDC_EDIT_PORT,148,35,36,13,ES_AUTOHSCROLL
+    LTEXT           "TUIO ScreenWidth:",IDC_STATIC,16,57,63,8
+    LTEXT           "TUIO ScreenHeight:",IDC_STATIC,16,77,65,8
+    EDITTEXT        IDC_EDIT_SCREENWIDTH,91,54,40,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCREENHEIGHT,91,75,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Default",IDC_BUTTON_DEFAULT,146,65,41,14
+END
+
+IDD_DIALOG_ADVANCED_SETTINGS DIALOGEX 0, 0, 349, 455
+STYLE DS_SETFONT | DS_NOIDLEMSG | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Image Sensor Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Set the proportion of the spot(20%~80%)",IDC_STATIC,12,20,138,8
+    EDITTEXT        IDC_EDIT_SPOTPROPORTION,259,18,65,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_SPOTPROPORTION,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,325,17,11,15
+    LTEXT           "Brightness coefficient(-64~255)",IDC_STATIC,12,40,103,8
+    EDITTEXT        IDC_EDIT_SET_NORMALUSAGE_BRIGHTNESS_COEFFICIENT,259,36,65,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_SET_AUTOCALIBRATION_BRIGHTNESS,
+                    "msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,325,35,11,15
+    GROUPBOX        "Auto Calibrate Settings",IDC_STATIC,11,205,332,76
+    LTEXT           "Average Brightness(0~255)",IDC_STATIC,14,221,90,8
+    EDITTEXT        IDC_EDIT_SET_AUTOCALIBRATE_AVERAGE_BRIGHTNESS,261,215,65,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_AUTOCALIBRATE_AVERAGE_BRIGHTNESS,
+                    "msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,327,214,11,15
+    LTEXT           "Light Gray(0~255)",IDC_STATIC,14,236,60,8
+    EDITTEXT        IDC_EDIT_AUTOCALIBRATE_HILIGHT_GRAY,261,231,65,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPINAUTOCALIBRATE_HILIGHT_GRAY,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,327,231,11,15
+    CONTROL         "Record video when calibrating",IDC_CHECK_RECORD_VIDEO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,267,112,10
+    GROUPBOX        "Other Settings",IDC_STATIC,7,283,336,97
+    GROUPBOX        "Throw ratio of the lens",IDC_STATIC,11,296,329,65
+    CONTROL         "Throw Ratio 0.15",IDC_RADIO_THROW_RATIO_015,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,16,306,71,10
+    CONTROL         "Throw Ratio 0.19",IDC_RADIO_THROW_RATIO_019,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,16,317,71,10
+    CONTROL         "Throw Ratio 0.21",IDC_RADIO_THROW_RATIO_021,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,16,328,71,10
+    CONTROL         "Throw Ratio 0.25",IDC_RADIO_THROW_RATIO_025,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,16,338,71,10
+    CONTROL         "Throw Ratio 0.28",IDC_RADIO_THROW_RATIO_028,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,15,348,71,10
+    CONTROL         "Throw Ratio 0.34",IDC_RADIO_THROW_RATIO_034,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,189,307,71,10
+    CONTROL         "Throw Ratio 0.55",IDC_RADIO_THROW_RATIO_055,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,189,317,71,10
+    CONTROL         "Throw Ratio 0.70",IDC_RADIO_THROW_RATIO_070,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,189,328,71,10
+    CONTROL         "Throw Ratio 0.86",IDC_RADIO_THROW_RATIO_086,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,189,338,71,10
+    CONTROL         "Throw Ratio 1.36",IDC_RADIO_THROW_RATIO_136,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,189,349,71,10
+    CONTROL         "Rear Projector",IDC_CHECK_REAR_PROJECTOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,393,64,12
+    CONTROL         "Double Screen",IDC_CHECK_DOUBLE_SCREEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,362,62,12
+    PUSHBUTTON      "Default Settings",IDC_BUTTON_DEFAULT_SETTINGS,284,428,59,15
+    PUSHBUTTON      "Select an monitor to see...",IDC_BUTTON_ATTACH_TO_A_SCREEN,181,364,107,14
+    CONTROL         "Desktop Projection",IDC_DESKTOPMODE,"Button",BS_AUTORADIOBUTTON | BS_NOTIFY | WS_GROUP,14,409,76,10
+    CONTROL         "Wall Projection",IDC_WALLMODE,"Button",BS_AUTORADIOBUTTON | BS_NOTIFY,198,410,63,10
+    GROUPBOX        "Projection Settings",IDC_STATIC,7,381,337,43
+    GROUPBOX        "Touch Settings",IDC_STATIC,7,153,336,51
+    GROUPBOX        "Normal Usage Settings",IDC_STATIC,7,7,336,96
+    CONTROL         "PenTouch-WhiteBoard",IDC_RADIO_PEN_TOUCH,"Button",BS_AUTORADIOBUTTON | BS_NOTIFY | WS_GROUP,26,170,87,10
+    CONTROL         "FingerTouch-WhiteBoard",IDC_RADIO_FINGER_TOUCH,"Button",BS_AUTORADIOBUTTON | BS_NOTIFY,143,169,95,10
+    CONTROL         "PalmTouch",IDC_RADIO_PALMTOUCHCONTROL,"Button",BS_AUTORADIOBUTTON | BS_NOTIFY,25,187,50,10
+    CONTROL         "FingerTouch",IDC_RADIO_FINGERTOUCHCONTROL,"Button",BS_AUTORADIOBUTTON | BS_NOTIFY,144,186,59,10
+    CONTROL         "Enable DynamicMaskFrame",IDC_CHECK_DYNAMICMASKFRAMECONTROL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,74,104,10
+    CONTROL         "Enable Anti-Jamming",IDC_CHECK_ANTIJAMMINGCONTROL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,196,86,85,10
+    CONTROL         "DisableReflectionPoint",IDC_CHECK_DISABLEREFLECTIONPOINT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,88,109,10
+    CONTROL         "SinglePointMode",IDC_CHECK_SINGLEPOINTMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,197,394,68,10
+    LTEXT           "Video Display Delay(0~200ms)",IDC_STATIC,12,252,104,8
+    EDITTEXT        IDC_EDIT_VIDEODISPLAYDELAY,261,248,67,15,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_VIDEODISPLAYDELAY,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,328,248,10,15
+    GROUPBOX        "Install Usage Setting",IDC_STATIC,8,106,336,47
+    LTEXT           "Brightness coefficient(-64~255)",IDC_STATIC,13,120,103,8
+    LTEXT           "Gamma coefficient",IDC_STATIC,13,136,60,8
+    EDITTEXT        IDC_EDIT_INSTALLBRIGHTNESS,259,115,66,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_INSTALLBRIGHTNESS,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,325,114,11,17
+    EDITTEXT        IDC_EDIT_INSTALLGAMMA,259,133,66,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_INSTALLGAMMA,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,325,133,11,16
+    LTEXT           "Smoothing coefficient(0~10)",IDC_STATIC,11,60,105,8
+    EDITTEXT        IDC_EDIT_SMOOTH_COEF,259,55,65,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_SMOOTH_COEF,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,326,52,11,16
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 102
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Gloview Laser Touch Calibration Program"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,211,10,20,20
+    LTEXT           "Gloview Laser Touch Calibration System 5.6.0.0",IDC_STATIC,8,10,148,8,SS_NOPREFIX
+    LTEXT           "EASI Tech Ltd. Copyright (C)  2020/01/01 --- 2050/01/01",IDC_STATIC,8,21,200,8
+    DEFPUSHBUTTON   "Ok",IDOK,171,72,50,16,WS_GROUP
+    LTEXT           "Shanghai Easi Computer Technology Co.Ltd.",IDC_STATIC,8,32,140,8
+    LTEXT           "Web:",IDC_STATIC,8,70,18,8
+    LTEXT           "Telephone: +86 021-62309502 ",IDC_STATIC,8,52,103,8
+    LTEXT           "Room502A, T1 Building, Qibao Baolong Plaza, MinHang District",IDC_STATIC,8,43,225,8
+    LTEXT           "Fax: +86 021-62309502-8004",IDC_STATIC,8,61,98,8
+    LTEXT           "http://www.easitech.com.cn/en/",IDC_LINKURL,34,70,119,8
+END
+
+IDD_ABOUTBOX_NEUTRAL DIALOGEX 0, 0, 235, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Laser Touch Calibration Program"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,207,5,20,20
+    LTEXT           "Laser Touch Calibration System 5.6.0.0",IDC_STATIC,8,10,127,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "Ok",IDOK,190,44,37,13,WS_GROUP
+    LTEXT           "Copyright (C) 2020/01/01 --- 2050/01/01",IDC_STATIC,9,27,132,8
+END
+
+IDD_DIALOG_SCREENLAYOUT_SETTINGS DIALOGEX 0, 0, 273, 153
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Screen Layout Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Primary Screen",IDC_RADIO_SCREENTYPE_PRIMARY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,171,36,66,10
+    CONTROL         "Full Virtual Desktop",IDC_RADIO_SCREENTYPE_FULL_VIRTUAL_DESKTOP,
+                    "Button",BS_AUTORADIOBUTTON,171,49,79,10
+    DEFPUSHBUTTON   "OK",IDOK,74,125,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,145,124,50,14
+    GROUPBOX        "Screen Split Mode",IDC_STATIC,7,7,259,115
+    LTEXT           "Rows",IDC_STATIC,26,34,19,8
+    EDITTEXT        IDC_EDIT_ROWS,65,32,40,14,ES_AUTOHSCROLL
+    LTEXT           "Columns",IDC_STATIC,27,51,15,8
+    EDITTEXT        IDC_EDIT_COLS,66,49,40,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_SIMULATE_CALIBRATION DLGINIT
+BEGIN
+    IDC_COMBO_CALIBRATION_TYPE, 0x403, 7, 0
+0x2039, 0x6f43, 0x736c, "\000" 
+    IDC_COMBO_CALIBRATION_TYPE, 0x403, 8, 0
+0x3031, 0x4320, 0x6c6f, 0x0073, 
+    IDC_COMBO_CALIBRATION_TYPE, 0x403, 8, 0
+0x3131, 0x4320, 0x6c6f, 0x0073, 
+    IDC_COMBO_CALIBRATION_TYPE, 0x403, 8, 0
+0x3231, 0x4320, 0x6c6f, 0x0073, 
+    IDC_COMBO_CALIBRATION_TYPE, 0x403, 8, 0
+0x3331, 0x4320, 0x6c6f, 0x0073, 
+    IDC_COMBO_CALIBRATION_TYPE, 0x403, 8, 0
+0x3431, 0x4320, 0x6c6f, 0x0073, 
+    IDC_COMBO_CALIBRATION_TYPE, 0x403, 8, 0
+0x3531, 0x4320, 0x6c6f, 0x0073, 
+    IDC_COMBO_CALIBRATION_TYPE, 0x403, 8, 0
+0x3631, 0x4320, 0x6c6f, 0x0073, 
+    IDC_COMBO_CALIBRATION_TYPE, 0x403, 8, 0
+0x3731, 0x4320, 0x6c6f, 0x0073, 
+    0
+END
+
+#endif    // English resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\OpticalPen.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

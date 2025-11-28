@@ -1,0 +1,741 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\.%255cMemLeakDetect">
+      <UniqueIdentifier>{2025ea5d-cca4-4a4a-9f82-41b0ef83dc91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\.%255cTinyXML">
+      <UniqueIdentifier>{904734b1-67fd-4063-a809-4ed9ea6b3e97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\..%255cinc">
+      <UniqueIdentifier>{35aed3d1-cdce-4dcf-bb01-ac6cf0909759}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\..%255cinc\Dib">
+      <UniqueIdentifier>{ecf25986-f036-4c50-b447-bf27c37257a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\..%255cinc\AVI">
+      <UniqueIdentifier>{04043cb1-5809-4f15-9c14-314c937a6d03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\.%255cMath">
+      <UniqueIdentifier>{dc1c5db1-ddaf-45c5-8f73-719fec757c05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\.%255cTinyXML">
+      <UniqueIdentifier>{065394b8-7cae-4105-9353-9aae7f98261e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\..%255cinc">
+      <UniqueIdentifier>{c639a367-adf4-4474-ac0c-619d4ab53dec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\..%255cinc\DIB">
+      <UniqueIdentifier>{3cf06a48-caf5-4530-9dee-6502f1c0eb1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Gesture Recognition">
+      <UniqueIdentifier>{8f6a02b2-1ab0-4ab8-9601-46d874c170fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gesture Recognition\GLBoard">
+      <UniqueIdentifier>{d73afdac-51db-403d-832f-0b98e23e15dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gesture Recognition\WGRExeContext">
+      <UniqueIdentifier>{1bf9766d-c4e4-48d5-b839-d99309817172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InstallTip">
+      <UniqueIdentifier>{3057efb8-19bc-47db-aa31-cb1c5cc08359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bitanswer">
+      <UniqueIdentifier>{31717cd4-d1db-4dc8-9158-f41242168b7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\..%255cinc\EEPROM">
+      <UniqueIdentifier>{e2f4cd6c-7f13-4c20-8ade-b726d0914ed7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddExceptionDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AdvancedSettingsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CalibrationWndBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CBPropertySheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CollectSpotSize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugVideoLoaderDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectShowFunc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgItemResizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GestureSettingDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GLBGRSettingDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HyperLinkWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InterceptFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InterceptInputPin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IWB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IWBDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IWBSensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IWBSensorManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LangSelectDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualCalibrationWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OnlineRegisterDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamsSettingPropertySheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PenPosDetector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shortcut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimulateCalibarationParamDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpotListProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpotMeger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpotSettingDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="USBDeviceList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoPlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoToScreenMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualHID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualMouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WGRConfigDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TinyXML\tinystr.cpp">
+      <Filter>Source Files\.%255cTinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="TinyXML\tinyxml.cpp">
+      <Filter>Source Files\.%255cTinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="TinyXML\tinyxmlerror.cpp">
+      <Filter>Source Files\.%255cTinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="TinyXML\tinyxmlparser.cpp">
+      <Filter>Source Files\.%255cTinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\ascii_font_5X7.cpp">
+      <Filter>Source Files\..%255cinc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\ascii_font_8X16.cpp">
+      <Filter>Source Files\..%255cinc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\DIB\Dib.cpp">
+      <Filter>Source Files\..%255cinc\Dib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\DIB\DibCanvas.cpp">
+      <Filter>Source Files\..%255cinc\Dib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\AVI\AVIReader.cpp">
+      <Filter>Source Files\..%255cinc\AVI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\AVI\AVIWriter.cpp">
+      <Filter>Source Files\..%255cinc\AVI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\DispMonitorFinder.cpp">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClCompile>
+    <ClCompile Include="Gesture Recognition\ProcessUtility.cpp">
+      <Filter>Gesture Recognition</Filter>
+    </ClCompile>
+    <ClCompile Include="Gesture Recognition\GLBoard\GestureEventGenerator.cpp">
+      <Filter>Gesture Recognition\GLBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="Gesture Recognition\GLBoard\GLGRTraceLog.cpp">
+      <Filter>Gesture Recognition\GLBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="Gesture Recognition\GLBoard\MultiPenGestureRecognition.cpp">
+      <Filter>Gesture Recognition\GLBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="Gesture Recognition\WGRExeContext\WGRCofig.cpp">
+      <Filter>Gesture Recognition\WGRExeContext</Filter>
+    </ClCompile>
+    <ClCompile Include="Gesture Recognition\WGRExeContext\WGRPermissionParse.cpp">
+      <Filter>Gesture Recognition\WGRExeContext</Filter>
+    </ClCompile>
+    <ClCompile Include="Gesture Recognition\WGRExeContext\WGRUtilContextImpl.cpp">
+      <Filter>Gesture Recognition\WGRExeContext</Filter>
+    </ClCompile>
+    <ClCompile Include="InstallTip\CommandLineWrapper.cpp">
+      <Filter>InstallTip</Filter>
+    </ClCompile>
+    <ClCompile Include="InstallTip\TipProcServer.cpp">
+      <Filter>InstallTip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bitanswer\BitAnswer.cpp">
+      <Filter>bitanswer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bitanswer\bitanswerError.cpp">
+      <Filter>bitanswer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bitanswer\BitAnswerException.cpp">
+      <Filter>bitanswer</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollablePropertyPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AttachToScreenDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenRecognition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\md5.cpp">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateFirmwareDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\EEPROM\UVCToEEPROM.cpp">
+      <Filter>Source Files\..%255cinc\EEPROM</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusBarEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorTimerAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualTUIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraFmtDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenLayoutDesigner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows_CreateSolidBrushEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseStoneMarker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TouchTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SparateOperationSettingDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgScreenLayoutSettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MemLeakDetect\dbgint.h">
+      <Filter>Source Files\.%255cMemLeakDetect</Filter>
+    </ClInclude>
+    <ClInclude Include="MemLeakDetect\MemLeakDetect.h">
+      <Filter>Source Files\.%255cMemLeakDetect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\NewFrameSink.h">
+      <Filter>Source Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="AddExceptionDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdvancedSettingsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Akima_Interpolate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CalibrateSymbolChecker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CalibrateSymbolManualSampler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CalibrationDataDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CalibrationWndBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CBPropertySheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CollectSpotSize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CountdownTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ctmf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugVideoLoaderDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceEventMonitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectShowFunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgItemResizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumDevices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameIntervalDetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GestureSettingDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GLBGRSettingDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HyperLinkWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InterceptFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InterceptInputPin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IWB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IWBDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IWBSensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IWBSensorManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LangSelectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LostFrameDetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualCalibrationWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitorSelectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiLang.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiPenGestureRecognition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OnlineRegisterDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpticalPenDoubleMatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpticalPenMatch_RedLeaf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OwnerDrawMenuBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamsSettingPropertySheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PenPosDetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResStr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RobustCornerDetect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenRecognition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ShareMemoryRegion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shortcut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimulateCalibarationParamDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartMatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpotListProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpotMerger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpotSettingDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StrokeFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TouchScreenDblChecker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="USBCameraDeviceList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="USBDevDetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VelocityCompensator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoPlayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoProcAmpProperty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoToScreenMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualHID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualMouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WGRConfigDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="YUY2ToRGB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TinyXML\tinystr.h">
+      <Filter>Header Files\.%255cTinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="TinyXML\tinyxml.h">
+      <Filter>Header Files\.%255cTinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\DispMonitorFinder.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\EASI_TOUCHSCREEN_INTERFACE.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\Log.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\MsgDefine.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\Round-RobinQueue.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\DIB\Dib.h">
+      <Filter>Header Files\..%255cinc\DIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\DIB\DibCanvas.h">
+      <Filter>Header Files\..%255cinc\DIB</Filter>
+    </ClInclude>
+    <ClInclude Include="Gesture Recognition\ProcessUtility.h">
+      <Filter>Gesture Recognition</Filter>
+    </ClInclude>
+    <ClInclude Include="Gesture Recognition\GLBoard\GestureEventGenerator.h">
+      <Filter>Gesture Recognition\GLBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="Gesture Recognition\GLBoard\GLBoardPublic.h">
+      <Filter>Gesture Recognition\GLBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="Gesture Recognition\GLBoard\GLGRTraceLog.h">
+      <Filter>Gesture Recognition\GLBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="Gesture Recognition\GLBoard\MultiPenGestureRecognition.h">
+      <Filter>Gesture Recognition\GLBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="Gesture Recognition\WGRExeContext\WGRCofig.h">
+      <Filter>Gesture Recognition\WGRExeContext</Filter>
+    </ClInclude>
+    <ClInclude Include="Gesture Recognition\WGRExeContext\WGRUtilContextImpl.h">
+      <Filter>Gesture Recognition\WGRExeContext</Filter>
+    </ClInclude>
+    <ClInclude Include="InstallTip\CommandLineWrapper.h">
+      <Filter>InstallTip</Filter>
+    </ClInclude>
+    <ClInclude Include="InstallTip\TipProcServer.h">
+      <Filter>InstallTip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bitanswer\BitanswerCpp.h">
+      <Filter>bitanswer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bitanswer\bitanswerError.h">
+      <Filter>bitanswer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bitanswer\BitAnswerException.h">
+      <Filter>bitanswer</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollablePropertyPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\Win32UDllLibrary.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="AttachToScreenDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorTimerAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\md5.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateFirmwareDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\EEPROM\UVCToEEPROM.h">
+      <Filter>Source Files\..%255cinc\EEPROM</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusBarEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BezierInterpolator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualTUIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraFmtDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenLayoutDesigner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseStoneMarker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TouchTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToleranceDistribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SparateOperationSettingDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgScreenLayoutSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Arrows\bottom_left.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\OEM\Singapore\res\Arrows\bottom_left.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\OEM\Singapore\res\Arrows\bottom_right.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Arrows\bottom_right.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\16X16\Brush.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\48X48\Brush.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\24X24\Brush.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\OEM\Singapore\res\32X32\Brush.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\OEM\Singapore\res\24X24\Brush.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\OEM\Singapore\res\16X16\Brush.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\32X32\Brush.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\OEM\Singapore\res\48X48\Brush.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\16X16\Eraser v3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\32X32\Eraser.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\16X16\Eraser.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\OEM\Singapore\res\24X24\Eraser.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\48X48\Eraser.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\OEM\Singapore\res\48X48\Eraser.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\OEM\Singapore\res\16X16\Eraser.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\24X24\Eraser.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\OEM\Singapore\res\32X32\Eraser.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\IWB.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\OEM\Singapore\res\OEM.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\OpticalPen.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Arrows\top_left.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\OEM\Singapore\res\Arrows\top_left.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\OEM\Singapore\res\Arrows\top_right.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Arrows\top_right.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\OEM\Singapore\res\cursor_DrawScreenArea.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursor_DrawScreenArea.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IWB.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Cursor_SplitHorz.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\hand.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="res\Cursor_SplitVert.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IWB.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
