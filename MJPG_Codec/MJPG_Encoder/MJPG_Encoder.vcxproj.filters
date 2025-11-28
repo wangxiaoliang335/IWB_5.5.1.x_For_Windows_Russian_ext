@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\..%255cinc%255cMJPG">
+      <UniqueIdentifier>{1c73b75a-3423-41d2-bb3c-3c79ea8138e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="JPEG">
+      <UniqueIdentifier>{9114bd71-9278-4037-8c5d-348db28cab9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JPEG\Header Files">
+      <UniqueIdentifier>{f77d9c0b-ccbe-4439-ba14-1e8a34ca4306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JPEG\Source Files">
+      <UniqueIdentifier>{5f9abb99-a225-431e-a393-5eb6d64ecb01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JPEG\Source Files\simd">
+      <UniqueIdentifier>{41142d50-52dc-4abc-89fe-5c9af8da1e8a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MJPG_Encoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\bmp.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\cdjpeg.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\cjpeg.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jaricom.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jcapimin.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jcapistd.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jcarith.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jccoefct.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jccolor.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jcdctmgr.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jchuff.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jcinit.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jcmainct.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jcmarker.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jcmaster.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jcomapi.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jcparam.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jcphuff.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jcprepct.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jcsample.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jdapimin.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jdapistd.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jdarith.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jdatadst.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jdcoefct.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jdcolor.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jddctmgr.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jdhuff.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jdinput.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jdmainct.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jdmarker.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jdmaster.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jdmerge.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jdphuff.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jdpostct.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jdsample.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jerror.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jfdctflt.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jfdctfst.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jfdctint.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jidctflt.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jidctfst.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jidctint.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jidctred.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jmemmgr.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jmemnobs.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jquant1.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jquant2.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\jutils.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\rdbmp.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\rdgif.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\rdppm.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\rdswitch.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\rdtarga.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\wrbmp.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\wrgif.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\wrppm.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\wrrle.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\wrtarga.c">
+      <Filter>JPEG\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libjpeg-turbo-1.2.90\simd\jsimd_i386.c">
+      <Filter>JPEG\Source Files\simd</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\MJPG\MJPG_Encoder.h">
+      <Filter>Header Files\..%255cinc%255cMJPG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\bmp.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\cderror.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\cdjpeg.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\config.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\jchuff.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\jconfig.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\jdct.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\jdhuff.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\jerror.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\jinclude.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\jmemsys.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\jmorecfg.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\jpegcomp.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\jpegint.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\jpeglib.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\jsimd.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\jsimddct.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\jversion.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\tjutil.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libjpeg-turbo-1.2.90\turbojpeg.h">
+      <Filter>JPEG\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

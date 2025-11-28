@@ -1,0 +1,1 @@
+nmake -f makefile APPVER=5.02 UNICODE=1

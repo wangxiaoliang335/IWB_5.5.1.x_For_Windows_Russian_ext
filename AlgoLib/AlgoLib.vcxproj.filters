@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\..%255cinc%255cDIB">
+      <UniqueIdentifier>{2f247607-7512-4fa0-9854-d7f739c5f4fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\.%255cAutoCalibrator">
+      <UniqueIdentifier>{e7efa0b6-569d-458d-bb77-ce32133a3482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\..%255cAVI">
+      <UniqueIdentifier>{35ccdc18-b69b-433a-8cd2-a4be06c88cff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\.%255cCalibrator">
+      <UniqueIdentifier>{34b6ffd6-ed3b-45cd-b760-3994478caaef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\.%255cScreenAreaDetector">
+      <UniqueIdentifier>{0e0773bc-09ed-4917-91f9-d7a527038b8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SIMD">
+      <UniqueIdentifier>{5e11705a-f708-44c6-be19-746b47b82000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\..%255cinc">
+      <UniqueIdentifier>{4e70891a-a6ee-492d-ae0a-c5599fa149c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\..%255cinc">
+      <UniqueIdentifier>{9a81e464-0ca9-4f12-90b2-2d0a067d6b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\.%255cAutoCalibrator">
+      <UniqueIdentifier>{6f78967a-ee26-45e5-b313-478eab836bc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\.%255cAutoCalibrator\..%255cinc%255cDIB">
+      <UniqueIdentifier>{cce196e6-41d6-44b3-a4a5-9423fc15cde1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\..%255cinc%255cAVI">
+      <UniqueIdentifier>{d86ba60c-4619-4f7f-9d41-e2346911d2b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\.%255cBlobDetector">
+      <UniqueIdentifier>{3f3bc6b8-177f-40d5-976f-5347be489bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\.%255cCalibrator">
+      <UniqueIdentifier>{600d0f4f-7a3f-4563-96f6-013ab536155b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\.%255cScreenAreaDetector">
+      <UniqueIdentifier>{420011f3-f243-44aa-b235-62bf7c202a4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CornerDetect">
+      <UniqueIdentifier>{84ae291a-0335-48c7-b9ab-25d5759c42c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SIMD">
+      <UniqueIdentifier>{fd302c57-8f81-4155-8b07-7b50699b0f81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AlgoLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CylinderBulbModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalVar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\DIB\Dib.cpp">
+      <Filter>Source Files\..%255cinc%255cDIB</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoCalibrator\AutoCalibratorImpl2.cpp">
+      <Filter>Source Files\.%255cAutoCalibrator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\AVI\AVIReader.cpp">
+      <Filter>Source Files\..%255cAVI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\AVI\AVIWriter.cpp">
+      <Filter>Source Files\..%255cAVI</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenAreaDetector\ScreenAreaDetectorImpl.cpp">
+      <Filter>Source Files\.%255cScreenAreaDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="SIMD\SIMD.cpp">
+      <Filter>Source Files\SIMD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\ascii_font_5X7.cpp">
+      <Filter>Source Files\..%255cinc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\ascii_font_8X16.cpp">
+      <Filter>Source Files\..%255cinc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\DispMonitorFinder.cpp">
+      <Filter>Source Files\..%255cinc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\md5.cpp">
+      <Filter>Source Files\..%255cinc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CylinderBulbModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalVar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\AlgoLib.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ImageDebug.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ImageDib.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ImageFrame.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ImageFrameAPI.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ImageJPEG.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\MyAPI.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\SortInDirection.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\SortVertex.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\SplitArea.h">
+      <Filter>Header Files\..%255cinc</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCalibrator\AutoBrightnessRegulator.h">
+      <Filter>Header Files\.%255cAutoCalibrator</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCalibrator\AutoCalibratorImpl2.h">
+      <Filter>Header Files\.%255cAutoCalibrator</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCalibrator\CalibratePattern.h">
+      <Filter>Header Files\.%255cAutoCalibrator</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCalibrator\ctmf.h">
+      <Filter>Header Files\.%255cAutoCalibrator</Filter>
+    </ClInclude>
+    <ClInclude Include="DIB\Dib.h">
+      <Filter>Header Files\.%255cAutoCalibrator\..%255cinc%255cDIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\AVI\AVIReader.h">
+      <Filter>Header Files\..%255cinc%255cAVI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\AVI\AVIWriter.h">
+      <Filter>Header Files\..%255cinc%255cAVI</Filter>
+    </ClInclude>
+    <ClInclude Include="BlobDetector\BlobDetectorImpl.h">
+      <Filter>Header Files\.%255cBlobDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenAreaDetector\ScreenAreaDetectorImpl.h">
+      <Filter>Header Files\.%255cScreenAreaDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="CornerDetect\CornerDetect.h">
+      <Filter>Header Files\CornerDetect</Filter>
+    </ClInclude>
+    <ClInclude Include="SIMD\SIMD.h">
+      <Filter>Header Files\SIMD</Filter>
+    </ClInclude>
+    <ClInclude Include="Calibrator\CalibrateAlgo.h">
+      <Filter>Header Files\.%255cCalibrator</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

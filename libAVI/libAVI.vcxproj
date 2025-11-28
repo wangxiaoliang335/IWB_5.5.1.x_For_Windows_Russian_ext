@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Neutral|Win32">
+      <Configuration>Release_Neutral</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Neutral|x64">
+      <Configuration>Release_Neutral</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RemoteDebug|Win32">
+      <Configuration>RemoteDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RemoteDebug|x64">
+      <Configuration>RemoteDebug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7771FB19-E2AE-498C-B637-EBA51584D173}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libAVI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Neutral|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Neutral|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\RemoteDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Neutral|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Neutral|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(RemoteDir)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Neutral|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin\$(Configuration)\</OutDir>
+    <IntDir>..\Intermidate\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Neutral|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>I:\xuke\MyCode\08_OpenCV\opencv-master\bin\lib\Debug;%(AdditionalLibraryDirectories);Dshow\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>I:\xuke\MyCode\08_OpenCV\opencv-master\bin\lib\Debug;%(AdditionalLibraryDirectories);Dshow\lib</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;LIBAVI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;LIBAVI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>I:\xuke\MyCode\08_OpenCV\opencv-master\bin\lib\Debug;%(AdditionalLibraryDirectories);Dshow\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Neutral|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>I:\xuke\MyCode\08_OpenCV\opencv-master\bin\lib\Debug;%(AdditionalLibraryDirectories);Dshow\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;LIBAVI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Neutral|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;LIBAVI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DShow\Include\activecf.h" />
+    <ClInclude Include="DShow\Include\amaudio.h" />
+    <ClInclude Include="DShow\Include\amextra.h" />
+    <ClInclude Include="DShow\Include\amfilter.h" />
+    <ClInclude Include="DShow\Include\amparse.h" />
+    <ClInclude Include="DShow\Include\amstream.h" />
+    <ClInclude Include="DShow\Include\amva.h" />
+    <ClInclude Include="DShow\Include\amvideo.h" />
+    <ClInclude Include="DShow\Include\atsmedia.h" />
+    <ClInclude Include="DShow\Include\audevcod.h" />
+    <ClInclude Include="DShow\Include\austream.h" />
+    <ClInclude Include="DShow\Include\aviriff.h" />
+    <ClInclude Include="DShow\Include\basetsd.h" />
+    <ClInclude Include="DShow\Include\bdaiface.h" />
+    <ClInclude Include="DShow\Include\bdamedia.h" />
+    <ClInclude Include="DShow\Include\Bdatif.h" />
+    <ClInclude Include="DShow\Include\bdatypes.h" />
+    <ClInclude Include="DShow\Include\cache.h" />
+    <ClInclude Include="DShow\Include\combase.h" />
+    <ClInclude Include="DShow\Include\comlite.h" />
+    <ClInclude Include="DShow\Include\control.h" />
+    <ClInclude Include="DShow\Include\cprop.h" />
+    <ClInclude Include="DShow\Include\ctlutil.h" />
+    <ClInclude Include="DShow\Include\d3d.h" />
+    <ClInclude Include="DShow\Include\d3d8.h" />
+    <ClInclude Include="DShow\Include\d3d8caps.h" />
+    <ClInclude Include="DShow\Include\d3d8types.h" />
+    <ClInclude Include="DShow\Include\d3d9.h" />
+    <ClInclude Include="DShow\Include\d3d9caps.h" />
+    <ClInclude Include="DShow\Include\d3d9types.h" />
+    <ClInclude Include="DShow\Include\d3dcaps.h" />
+    <ClInclude Include="DShow\Include\d3drm.h" />
+    <ClInclude Include="DShow\Include\d3drmdef.h" />
+    <ClInclude Include="DShow\Include\d3drmobj.h" />
+    <ClInclude Include="DShow\Include\d3drmwin.h" />
+    <ClInclude Include="DShow\Include\d3dtypes.h" />
+    <ClInclude Include="DShow\Include\d3dx.h" />
+    <ClInclude Include="DShow\Include\d3dx8.h" />
+    <ClInclude Include="DShow\Include\d3dx8core.h" />
+    <ClInclude Include="DShow\Include\d3dx8effect.h" />
+    <ClInclude Include="DShow\Include\d3dx8math.h" />
+    <ClInclude Include="DShow\Include\d3dx8mesh.h" />
+    <ClInclude Include="DShow\Include\d3dx8shape.h" />
+    <ClInclude Include="DShow\Include\d3dx8tex.h" />
+    <ClInclude Include="DShow\Include\d3dx9.h" />
+    <ClInclude Include="DShow\Include\d3dx9anim.h" />
+    <ClInclude Include="DShow\Include\d3dx9core.h" />
+    <ClInclude Include="DShow\Include\d3dx9effect.h" />
+    <ClInclude Include="DShow\Include\d3dx9math.h" />
+    <ClInclude Include="DShow\Include\d3dx9mesh.h" />
+    <ClInclude Include="DShow\Include\d3dx9shader.h" />
+    <ClInclude Include="DShow\Include\d3dx9shape.h" />
+    <ClInclude Include="DShow\Include\d3dx9tex.h" />
+    <ClInclude Include="DShow\Include\d3dx9xof.h" />
+    <ClInclude Include="DShow\Include\d3dxcore.h" />
+    <ClInclude Include="DShow\Include\d3dxerr.h" />
+    <ClInclude Include="DShow\Include\d3dxmath.h" />
+    <ClInclude Include="DShow\Include\d3dxshapes.h" />
+    <ClInclude Include="DShow\Include\d3dxsprite.h" />
+    <ClInclude Include="DShow\Include\ddmm.h" />
+    <ClInclude Include="DShow\Include\ddraw.h" />
+    <ClInclude Include="DShow\Include\ddstream.h" />
+    <ClInclude Include="DShow\Include\dinput.h" />
+    <ClInclude Include="DShow\Include\dinputd.h" />
+    <ClInclude Include="DShow\Include\dllsetup.h" />
+    <ClInclude Include="DShow\Include\dls1.h" />
+    <ClInclude Include="DShow\Include\dls2.h" />
+    <ClInclude Include="DShow\Include\dmdls.h" />
+    <ClInclude Include="DShow\Include\dmerror.h" />
+    <ClInclude Include="DShow\Include\dmksctrl.h" />
+    <ClInclude Include="DShow\Include\dmo.h" />
+    <ClInclude Include="DShow\Include\dmodshow.h" />
+    <ClInclude Include="DShow\Include\dmoimpl.h" />
+    <ClInclude Include="DShow\Include\dmoreg.h" />
+    <ClInclude Include="DShow\Include\dmort.h" />
+    <ClInclude Include="DShow\Include\dmplugin.h" />
+    <ClInclude Include="DShow\Include\dmusbuff.h" />
+    <ClInclude Include="DShow\Include\dmusicc.h" />
+    <ClInclude Include="DShow\Include\dmusicf.h" />
+    <ClInclude Include="DShow\Include\dmusici.h" />
+    <ClInclude Include="DShow\Include\dmusics.h" />
+    <ClInclude Include="DShow\Include\dpaddr.h" />
+    <ClInclude Include="DShow\Include\dplay.h" />
+    <ClInclude Include="DShow\Include\dplay8.h" />
+    <ClInclude Include="DShow\Include\dplobby.h" />
+    <ClInclude Include="DShow\Include\dplobby8.h" />
+    <ClInclude Include="DShow\Include\dpnathlp.h" />
+    <ClInclude Include="DShow\Include\dsconf.h" />
+    <ClInclude Include="DShow\Include\dsetup.h" />
+    <ClInclude Include="DShow\Include\dshow.h" />
+    <ClInclude Include="DShow\Include\dshowasf.h" />
+    <ClInclude Include="DShow\Include\dsound.h" />
+    <ClInclude Include="DShow\Include\dsschedule.h" />
+    <ClInclude Include="DShow\Include\dv.h" />
+    <ClInclude Include="DShow\Include\dvdevcod.h" />
+    <ClInclude Include="DShow\Include\dvdmedia.h" />
+    <ClInclude Include="DShow\Include\dvoice.h" />
+    <ClInclude Include="DShow\Include\dvp.h" />
+    <ClInclude Include="DShow\Include\dx7todx8.h" />
+    <ClInclude Include="DShow\Include\dxdiag.h" />
+    <ClInclude Include="DShow\Include\dxerr8.h" />
+    <ClInclude Include="DShow\Include\dxerr9.h" />
+    <ClInclude Include="DShow\Include\dxfile.h" />
+    <ClInclude Include="DShow\Include\dxtrans.h" />
+    <ClInclude Include="DShow\Include\dxutil.h" />
+    <ClInclude Include="DShow\Include\dxva.h" />
+    <ClInclude Include="DShow\Include\edevctrl.h" />
+    <ClInclude Include="DShow\Include\edevdefs.h" />
+    <ClInclude Include="DShow\Include\errors.h" />
+    <ClInclude Include="DShow\Include\evcode.h" />
+    <ClInclude Include="DShow\Include\fourcc.h" />
+    <ClInclude Include="DShow\Include\il21dec.h" />
+    <ClInclude Include="DShow\Include\Iwstdec.h" />
+    <ClInclude Include="DShow\Include\ks.h" />
+    <ClInclude Include="DShow\Include\ksguid.h" />
+    <ClInclude Include="DShow\Include\ksmedia.h" />
+    <ClInclude Include="DShow\Include\ksproxy.h" />
+    <ClInclude Include="DShow\Include\ksuuids.h" />
+    <ClInclude Include="DShow\Include\measure.h" />
+    <ClInclude Include="DShow\Include\mediaerr.h" />
+    <ClInclude Include="DShow\Include\mediaobj.h" />
+    <ClInclude Include="DShow\Include\medparam.h" />
+    <ClInclude Include="DShow\Include\mixerocx.h" />
+    <ClInclude Include="DShow\Include\mmstream.h" />
+    <ClInclude Include="DShow\Include\mpconfig.h" />
+    <ClInclude Include="DShow\Include\mpeg2bits.h" />
+    <ClInclude Include="DShow\Include\mpeg2data.h" />
+    <ClInclude Include="DShow\Include\Mpeg2Error.h" />
+    <ClInclude Include="DShow\Include\mpegtype.h" />
+    <ClInclude Include="DShow\Include\msgthrd.h" />
+    <ClInclude Include="DShow\Include\Mstvca.h" />
+    <ClInclude Include="DShow\Include\Mstve.h" />
+    <ClInclude Include="DShow\Include\Msvidctl.h" />
+    <ClInclude Include="DShow\Include\mtype.h" />
+    <ClInclude Include="DShow\Include\multimon.h" />
+    <ClInclude Include="DShow\Include\outputq.h" />
+    <ClInclude Include="DShow\Include\PixPlugin.h" />
+    <ClInclude Include="DShow\Include\playlist.h" />
+    <ClInclude Include="DShow\Include\pstream.h" />
+    <ClInclude Include="DShow\Include\pullpin.h" />
+    <ClInclude Include="DShow\Include\qedit.h" />
+    <ClInclude Include="DShow\Include\qnetwork.h" />
+    <ClInclude Include="DShow\Include\refclock.h" />
+    <ClInclude Include="DShow\Include\reftime.h" />
+    <ClInclude Include="DShow\Include\regbag.h" />
+    <ClInclude Include="DShow\Include\renbase.h" />
+    <ClInclude Include="DShow\Include\rmxfguid.h" />
+    <ClInclude Include="DShow\Include\rmxftmpl.h" />
+    <ClInclude Include="DShow\Include\sbe.h" />
+    <ClInclude Include="DShow\Include\seekpt.h" />
+    <ClInclude Include="DShow\Include\Segment.h" />
+    <ClInclude Include="DShow\Include\source.h" />
+    <ClInclude Include="DShow\Include\streams.h" />
+    <ClInclude Include="DShow\Include\strmctl.h" />
+    <ClInclude Include="DShow\Include\strmif.h" />
+    <ClInclude Include="DShow\Include\strsafe.h" />
+    <ClInclude Include="DShow\Include\sysclock.h" />
+    <ClInclude Include="DShow\Include\transfrm.h" />
+    <ClInclude Include="DShow\Include\transip.h" />
+    <ClInclude Include="DShow\Include\tune.h" />
+    <ClInclude Include="DShow\Include\tuner.h" />
+    <ClInclude Include="DShow\Include\tvratings.h" />
+    <ClInclude Include="DShow\Include\uuids.h" />
+    <ClInclude Include="DShow\Include\vfwmsgs.h" />
+    <ClInclude Include="DShow\Include\vidcap.h" />
+    <ClInclude Include="DShow\Include\videoacc.h" />
+    <ClInclude Include="DShow\Include\videoctl.h" />
+    <ClInclude Include="DShow\Include\vmr9.h" />
+    <ClInclude Include="DShow\Include\vpconfig.h" />
+    <ClInclude Include="DShow\Include\vpnotify.h" />
+    <ClInclude Include="DShow\Include\vptype.h" />
+    <ClInclude Include="DShow\Include\vtrans.h" />
+    <ClInclude Include="DShow\Include\winctrl.h" />
+    <ClInclude Include="DShow\Include\winutil.h" />
+    <ClInclude Include="DShow\Include\wxdebug.h" />
+    <ClInclude Include="DShow\Include\wxlist.h" />
+    <ClInclude Include="DShow\Include\wxutil.h" />
+    <ClInclude Include="DShow\Include\xprtdefs.h" />
+    <ClInclude Include="libAVI.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release_Neutral|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Neutral|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release_Neutral|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Neutral|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="libAVI.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Neutral|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Neutral|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Neutral|x64'">Create</PrecompiledHeader>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='RemoteDebug|Win32'">..;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

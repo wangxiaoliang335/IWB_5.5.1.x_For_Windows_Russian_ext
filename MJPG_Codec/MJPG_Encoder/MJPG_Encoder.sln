@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MJPG_Encoder", "MJPG_Encoder.vcproj", "{B160CBBD-5A20-48BC-9D48-7D9684BD509E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testDemo", "..\testDemo\testDemo.vcproj", "{1AACA6AF-3A9D-4758-A900-8F3B5145C7EC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B160CBBD-5A20-48BC-9D48-7D9684BD509E} = {B160CBBD-5A20-48BC-9D48-7D9684BD509E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		RemoteDebug|Win32 = RemoteDebug|Win32
+		RemoteRelease|Win32 = RemoteRelease|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B160CBBD-5A20-48BC-9D48-7D9684BD509E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B160CBBD-5A20-48BC-9D48-7D9684BD509E}.Debug|Win32.Build.0 = Debug|Win32
+		{B160CBBD-5A20-48BC-9D48-7D9684BD509E}.Release|Win32.ActiveCfg = Release|Win32
+		{B160CBBD-5A20-48BC-9D48-7D9684BD509E}.Release|Win32.Build.0 = Release|Win32
+		{B160CBBD-5A20-48BC-9D48-7D9684BD509E}.RemoteDebug|Win32.ActiveCfg = RemoteDebug|Win32
+		{B160CBBD-5A20-48BC-9D48-7D9684BD509E}.RemoteDebug|Win32.Build.0 = RemoteDebug|Win32
+		{B160CBBD-5A20-48BC-9D48-7D9684BD509E}.RemoteRelease|Win32.ActiveCfg = RemoteRelease|Win32
+		{B160CBBD-5A20-48BC-9D48-7D9684BD509E}.RemoteRelease|Win32.Build.0 = RemoteRelease|Win32
+		{1AACA6AF-3A9D-4758-A900-8F3B5145C7EC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1AACA6AF-3A9D-4758-A900-8F3B5145C7EC}.Debug|Win32.Build.0 = Debug|Win32
+		{1AACA6AF-3A9D-4758-A900-8F3B5145C7EC}.Release|Win32.ActiveCfg = Release|Win32
+		{1AACA6AF-3A9D-4758-A900-8F3B5145C7EC}.Release|Win32.Build.0 = Release|Win32
+		{1AACA6AF-3A9D-4758-A900-8F3B5145C7EC}.RemoteDebug|Win32.ActiveCfg = Debug|Win32
+		{1AACA6AF-3A9D-4758-A900-8F3B5145C7EC}.RemoteDebug|Win32.Build.0 = Debug|Win32
+		{1AACA6AF-3A9D-4758-A900-8F3B5145C7EC}.RemoteRelease|Win32.ActiveCfg = Release|Win32
+		{1AACA6AF-3A9D-4758-A900-8F3B5145C7EC}.RemoteRelease|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

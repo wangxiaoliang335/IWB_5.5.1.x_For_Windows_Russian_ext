@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DEU_RES", "DEU_RES.vcproj", "{70285797-172B-4D5A-B437-4A6281649A93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release_Neutral|Win32 = Release_Neutral|Win32
+		Release|Win32 = Release|Win32
+		RemoteDebug|Win32 = RemoteDebug|Win32
+		RemoteDebug-xk|Win32 = RemoteDebug-xk|Win32
+		RemoteRelease|Win32 = RemoteRelease|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70285797-172B-4D5A-B437-4A6281649A93}.Debug|Win32.ActiveCfg = Debug|Win32
+		{70285797-172B-4D5A-B437-4A6281649A93}.Debug|Win32.Build.0 = Debug|Win32
+		{70285797-172B-4D5A-B437-4A6281649A93}.Release_Neutral|Win32.ActiveCfg = Release_Neutral|Win32
+		{70285797-172B-4D5A-B437-4A6281649A93}.Release_Neutral|Win32.Build.0 = Release_Neutral|Win32
+		{70285797-172B-4D5A-B437-4A6281649A93}.Release|Win32.ActiveCfg = Release|Win32
+		{70285797-172B-4D5A-B437-4A6281649A93}.Release|Win32.Build.0 = Release|Win32
+		{70285797-172B-4D5A-B437-4A6281649A93}.RemoteDebug|Win32.ActiveCfg = RemoteDebug|Win32
+		{70285797-172B-4D5A-B437-4A6281649A93}.RemoteDebug|Win32.Build.0 = RemoteDebug|Win32
+		{70285797-172B-4D5A-B437-4A6281649A93}.RemoteDebug-xk|Win32.ActiveCfg = RemoteDebug-xk|Win32
+		{70285797-172B-4D5A-B437-4A6281649A93}.RemoteDebug-xk|Win32.Build.0 = RemoteDebug-xk|Win32
+		{70285797-172B-4D5A-B437-4A6281649A93}.RemoteRelease|Win32.ActiveCfg = RemoteRelease|Win32
+		{70285797-172B-4D5A-B437-4A6281649A93}.RemoteRelease|Win32.Build.0 = RemoteRelease|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

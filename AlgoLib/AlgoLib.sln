@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AlgoLib", "AlgoLib.vcproj", "{E9E185B2-1A18-4B01-8857-5BBCE2B9BD8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		RemoteDebug|Win32 = RemoteDebug|Win32
+		RemoteRelease|Win32 = RemoteRelease|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9E185B2-1A18-4B01-8857-5BBCE2B9BD8F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E9E185B2-1A18-4B01-8857-5BBCE2B9BD8F}.Debug|Win32.Build.0 = Debug|Win32
+		{E9E185B2-1A18-4B01-8857-5BBCE2B9BD8F}.Release|Win32.ActiveCfg = Release|Win32
+		{E9E185B2-1A18-4B01-8857-5BBCE2B9BD8F}.Release|Win32.Build.0 = Release|Win32
+		{E9E185B2-1A18-4B01-8857-5BBCE2B9BD8F}.RemoteDebug|Win32.ActiveCfg = RemoteDebug|Win32
+		{E9E185B2-1A18-4B01-8857-5BBCE2B9BD8F}.RemoteDebug|Win32.Build.0 = RemoteDebug|Win32
+		{E9E185B2-1A18-4B01-8857-5BBCE2B9BD8F}.RemoteRelease|Win32.ActiveCfg = RemoteRelease|Win32
+		{E9E185B2-1A18-4B01-8857-5BBCE2B9BD8F}.RemoteRelease|Win32.Build.0 = RemoteRelease|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

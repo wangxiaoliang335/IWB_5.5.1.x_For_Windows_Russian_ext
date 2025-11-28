@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\DShow">
+      <UniqueIdentifier>{6cfb6b27-6efa-47f0-92bb-820ae58b0445}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libAVI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\activecf.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\amaudio.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\amextra.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\amfilter.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\amparse.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\amstream.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\amva.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\amvideo.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\atsmedia.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\audevcod.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\austream.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\aviriff.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\basetsd.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\bdaiface.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\bdamedia.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\Bdatif.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\bdatypes.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\cache.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\combase.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\comlite.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\control.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\cprop.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\ctlutil.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3d.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3d8.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3d8caps.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3d8types.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3d9.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3d9caps.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3d9types.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dcaps.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3drm.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3drmdef.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3drmobj.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3drmwin.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dtypes.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx8.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx8core.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx8effect.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx8math.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx8mesh.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx8shape.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx8tex.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx9.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx9anim.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx9core.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx9effect.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx9math.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx9mesh.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx9shader.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx9shape.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx9tex.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dx9xof.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dxcore.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dxerr.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dxmath.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dxshapes.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\d3dxsprite.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\ddmm.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\ddraw.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\ddstream.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dinput.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dinputd.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dllsetup.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dls1.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dls2.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dmdls.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dmerror.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dmksctrl.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dmo.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dmodshow.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dmoimpl.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dmoreg.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dmort.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dmplugin.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dmusbuff.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dmusicc.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dmusicf.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dmusici.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dmusics.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dpaddr.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dplay.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dplay8.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dplobby.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dplobby8.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dpnathlp.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dsconf.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dsetup.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dshow.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dshowasf.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dsound.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dsschedule.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dv.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dvdevcod.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dvdmedia.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dvoice.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dvp.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dx7todx8.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dxdiag.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dxerr8.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dxerr9.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dxfile.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dxtrans.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dxutil.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\dxva.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\edevctrl.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\edevdefs.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\errors.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\evcode.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\fourcc.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\il21dec.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\Iwstdec.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\ks.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\ksguid.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\ksmedia.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\ksproxy.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\ksuuids.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\measure.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\mediaerr.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\mediaobj.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\medparam.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\mixerocx.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\mmstream.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\mpconfig.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\mpeg2bits.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\mpeg2data.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\Mpeg2Error.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\mpegtype.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\msgthrd.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\Mstvca.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\Mstve.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\Msvidctl.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\mtype.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\multimon.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\outputq.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\PixPlugin.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\playlist.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\pstream.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\pullpin.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\qedit.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\qnetwork.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\refclock.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\reftime.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\regbag.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\renbase.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\rmxfguid.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\rmxftmpl.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\sbe.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\seekpt.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\Segment.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\source.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\streams.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\strmctl.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\strmif.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\strsafe.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\sysclock.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\transfrm.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\transip.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\tune.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\tuner.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\tvratings.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\uuids.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\vfwmsgs.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\vidcap.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\videoacc.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\videoctl.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\vmr9.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\vpconfig.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\vpnotify.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\vptype.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\vtrans.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\winctrl.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\winutil.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\wxdebug.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\wxlist.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\wxutil.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow\Include\xprtdefs.h">
+      <Filter>Header Files\DShow</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libAVI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

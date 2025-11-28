@@ -1,0 +1,12 @@
+Name:	
+IWB_5.3.0.1_For_Windows
+Type:	
+Git (git)
+Contact:	
+15077726@qq.com
+Access:	
+Read+Write access
+Url:	
+http://192.168.1.40:8080/scm/git/IWB_5.3.0.1_For_Windows
+Checkout:	
+git clone http://xuke@192.168.1.40:8080/scm/git/IWB_5.3.0.1_For_Windows

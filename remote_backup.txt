@@ -1,0 +1,4 @@
+github-ext	git@github.com:wangxiaoliang335/IWB_5.5.1.x_For_Windows_Russian_ext.git (fetch)
+github-ext	git@github.com:wangxiaoliang335/IWB_5.5.1.x_For_Windows_Russian_ext.git (push)
+origin	http://zhaown@192.168.1.40:8080/scm/git/IWB_5.3.0.1_For_Windows (fetch)
+origin	http://zhaown@192.168.1.40:8080/scm/git/IWB_5.3.0.1_For_Windows (push)

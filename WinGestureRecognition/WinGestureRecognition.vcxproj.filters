@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="手指形状">
+      <UniqueIdentifier>{58e8aa72-3a46-4387-b584-1f4932399e5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="手指形状\2触点">
+      <UniqueIdentifier>{c2b9d692-28f6-4cad-a580-4d18d2318541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="手指形状\3~5触点">
+      <UniqueIdentifier>{ee0d9e35-c264-4d27-b9a4-e1eb015da08f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="手指形状\6个及其以上触点">
+      <UniqueIdentifier>{6f63845f-ee14-4411-b9d9-e25eb6a1c5aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="手掌形状">
+      <UniqueIdentifier>{d37b9184-b0a9-40fe-b579-5287afc9a126}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="手掌形状\特殊位置">
+      <UniqueIdentifier>{a68dbeeb-f1fd-4b16-8ef4-5e09786c4f9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="手掌形状\特殊位置\下边缘位置">
+      <UniqueIdentifier>{3106b660-c005-4bd4-bd74-5321b5bd9be1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="手掌形状\非特殊位置">
+      <UniqueIdentifier>{c0fff062-cc27-47fa-8b1f-6dd513e4b01c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TinyXML">
+      <UniqueIdentifier>{c05978fe-e124-4cb3-9a81-0270ec054520}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GlobalLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputTouchClusterAlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpotsLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WGRCommonUlity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WGRStateMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WGRTraceLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsGestureRecognition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Finger\WGRFingerStateMachine.cpp">
+      <Filter>手指形状</Filter>
+    </ClCompile>
+    <ClCompile Include="Finger\2Touches\FHMouseWheelStateMachine.cpp">
+      <Filter>手指形状\2触点</Filter>
+    </ClCompile>
+    <ClCompile Include="Finger\2Touches\FTwoTouchPublic.cpp">
+      <Filter>手指形状\2触点</Filter>
+    </ClCompile>
+    <ClCompile Include="Finger\2Touches\FTwoTouchStateMachine.cpp">
+      <Filter>手指形状\2触点</Filter>
+    </ClCompile>
+    <ClCompile Include="Finger\2Touches\FVMouseWheelStateMachine.cpp">
+      <Filter>手指形状\2触点</Filter>
+    </ClCompile>
+    <ClCompile Include="Finger\3~5Touches\FMaxiCurWndStateMachine.cpp">
+      <Filter>手指形状\3~5触点</Filter>
+    </ClCompile>
+    <ClCompile Include="Finger\3~5Touches\FMiniCurWndStateMachine.cpp">
+      <Filter>手指形状\3~5触点</Filter>
+    </ClCompile>
+    <ClCompile Include="Finger\3~5Touches\FSwitchWndStateMachine.cpp">
+      <Filter>手指形状\3~5触点</Filter>
+    </ClCompile>
+    <ClCompile Include="Finger\3~5Touches\FThree2FiveTouchPublic.cpp">
+      <Filter>手指形状\3~5触点</Filter>
+    </ClCompile>
+    <ClCompile Include="Finger\3~5Touches\FThree2FiveTouchStateMachine.cpp">
+      <Filter>手指形状\3~5触点</Filter>
+    </ClCompile>
+    <ClCompile Include="Finger\6MoreTouches\FMiniAllWndStateMachine.cpp">
+      <Filter>手指形状\6个及其以上触点</Filter>
+    </ClCompile>
+    <ClCompile Include="Finger\6MoreTouches\FSixMoreTouchPublic.cpp">
+      <Filter>手指形状\6个及其以上触点</Filter>
+    </ClCompile>
+    <ClCompile Include="Finger\6MoreTouches\FSixMoreTouchStateMachine.cpp">
+      <Filter>手指形状\6个及其以上触点</Filter>
+    </ClCompile>
+    <ClCompile Include="Palm\WGRPalmStateMachine.cpp">
+      <Filter>手掌形状</Filter>
+    </ClCompile>
+    <ClCompile Include="Palm\SpecLocation\LowLim\PLowLimPublic.cpp">
+      <Filter>手掌形状\特殊位置\下边缘位置</Filter>
+    </ClCompile>
+    <ClCompile Include="Palm\SpecLocation\LowLim\PLowLimStateMachine.cpp">
+      <Filter>手掌形状\特殊位置\下边缘位置</Filter>
+    </ClCompile>
+    <ClCompile Include="Palm\SpecLocation\LowLim\PShowWndSBSStateMachine.cpp">
+      <Filter>手掌形状\特殊位置\下边缘位置</Filter>
+    </ClCompile>
+    <ClCompile Include="Palm\NonSpecLocation\PCloseCurWndStateMachine.cpp">
+      <Filter>手掌形状\非特殊位置</Filter>
+    </ClCompile>
+    <ClCompile Include="Palm\NonSpecLocation\PMoveWndStateMachine.cpp">
+      <Filter>手掌形状\非特殊位置</Filter>
+    </ClCompile>
+    <ClCompile Include="Palm\NonSpecLocation\PNonSpeccLocStateMachine.cpp">
+      <Filter>手掌形状\非特殊位置</Filter>
+    </ClCompile>
+    <ClCompile Include="Palm\NonSpecLocation\PNonSpecLocPublic.cpp">
+      <Filter>手掌形状\非特殊位置</Filter>
+    </ClCompile>
+    <ClCompile Include="Palm\NonSpecLocation\PRefreshWndStateMachine.cpp">
+      <Filter>手掌形状\非特殊位置</Filter>
+    </ClCompile>
+    <ClCompile Include="TinyXML\tinystr.cpp">
+      <Filter>TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="TinyXML\tinyxml.cpp">
+      <Filter>TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="TinyXML\tinyxmlerror.cpp">
+      <Filter>TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="TinyXML\tinyxmlparser.cpp">
+      <Filter>TinyXML</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GlobalLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputTouchClusterAlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpotsLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WGestureRecPublic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WGRCommonUlity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WGRStateMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WGRStateMachineInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WGRTraceLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsGestureRecognition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Finger\WGRFingerStateMachine.h">
+      <Filter>手指形状</Filter>
+    </ClInclude>
+    <ClInclude Include="Finger\2Touches\FHMouseWheelStateMachine.h">
+      <Filter>手指形状\2触点</Filter>
+    </ClInclude>
+    <ClInclude Include="Finger\2Touches\FTwoTouchPublic.h">
+      <Filter>手指形状\2触点</Filter>
+    </ClInclude>
+    <ClInclude Include="Finger\2Touches\FTwoTouchStateMachine.h">
+      <Filter>手指形状\2触点</Filter>
+    </ClInclude>
+    <ClInclude Include="Finger\2Touches\FVMouseWheelStateMachine.h">
+      <Filter>手指形状\2触点</Filter>
+    </ClInclude>
+    <ClInclude Include="Finger\3~5Touches\FMaxiCurWndStateMachine.h">
+      <Filter>手指形状\3~5触点</Filter>
+    </ClInclude>
+    <ClInclude Include="Finger\3~5Touches\FMiniCurWndStateMachine.h">
+      <Filter>手指形状\3~5触点</Filter>
+    </ClInclude>
+    <ClInclude Include="Finger\3~5Touches\FSwitchWndStateMachine.h">
+      <Filter>手指形状\3~5触点</Filter>
+    </ClInclude>
+    <ClInclude Include="Finger\3~5Touches\FThree2FiveTouchPublic.h">
+      <Filter>手指形状\3~5触点</Filter>
+    </ClInclude>
+    <ClInclude Include="Finger\3~5Touches\FThree2FiveTouchStateMachine.h">
+      <Filter>手指形状\3~5触点</Filter>
+    </ClInclude>
+    <ClInclude Include="Finger\6MoreTouches\FMiniAllWndStateMachine.h">
+      <Filter>手指形状\6个及其以上触点</Filter>
+    </ClInclude>
+    <ClInclude Include="Finger\6MoreTouches\FSixMoreTouchPublic.h">
+      <Filter>手指形状\6个及其以上触点</Filter>
+    </ClInclude>
+    <ClInclude Include="Finger\6MoreTouches\FSixMoreTouchStateMachine.h">
+      <Filter>手指形状\6个及其以上触点</Filter>
+    </ClInclude>
+    <ClInclude Include="Palm\WGRPalmStateMachine.h">
+      <Filter>手掌形状</Filter>
+    </ClInclude>
+    <ClInclude Include="Palm\SpecLocation\LowLim\PLowLimPublic.h">
+      <Filter>手掌形状\特殊位置\下边缘位置</Filter>
+    </ClInclude>
+    <ClInclude Include="Palm\SpecLocation\LowLim\PLowLimStateMachine.h">
+      <Filter>手掌形状\特殊位置\下边缘位置</Filter>
+    </ClInclude>
+    <ClInclude Include="Palm\SpecLocation\LowLim\PShowWndSBSStateMachine.h">
+      <Filter>手掌形状\特殊位置\下边缘位置</Filter>
+    </ClInclude>
+    <ClInclude Include="Palm\NonSpecLocation\PCloseCurWndStateMachine.h">
+      <Filter>手掌形状\非特殊位置</Filter>
+    </ClInclude>
+    <ClInclude Include="Palm\NonSpecLocation\PMoveWndStateMachine.h">
+      <Filter>手掌形状\非特殊位置</Filter>
+    </ClInclude>
+    <ClInclude Include="Palm\NonSpecLocation\PNonSpeccLocStateMachine.h">
+      <Filter>手掌形状\非特殊位置</Filter>
+    </ClInclude>
+    <ClInclude Include="Palm\NonSpecLocation\PNonSpecLocPublic.h">
+      <Filter>手掌形状\非特殊位置</Filter>
+    </ClInclude>
+    <ClInclude Include="Palm\NonSpecLocation\PRefreshWndStateMachine.h">
+      <Filter>手掌形状\非特殊位置</Filter>
+    </ClInclude>
+    <ClInclude Include="TinyXML\tinystr.h">
+      <Filter>TinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="TinyXML\tinyxml.h">
+      <Filter>TinyXML</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

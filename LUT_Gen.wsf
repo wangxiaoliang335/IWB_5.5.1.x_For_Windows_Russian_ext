@@ -1,0 +1,139 @@
+<PACKAGE>
+
+<COMMENT>
+功能:生成光点检测查找表的C++源文件
+日期:2013/03/13
+调试方法:运行, cscript.exe LUT_Gen.wsf //Job:CreateLUT //X
+</COMMENT>
+
+<JOB id=CreateLUT>
+ <runtime>
+        <description>查找表生成程序</description>
+        <example> </example>
+        
+ </runtime>
+ 
+<SCRIPT LANGUAGE="JSCRIPT">
+    //@功能:返回整数的二进制表示字符串
+ 	function toBinary()
+    {
+        var result = "";
+        var value = this;
+        for(var i=0; i<8 ;i++)
+        {
+           if(value & 0x01)
+           {    
+                result = "1" + result;
+           }
+           else
+           {
+                result = "0" + result;
+           }
+           value >>= 1;
+            
+        }
+        result += "B";
+    
+        return result;
+    }
+
+    function toHex()
+    {
+        var result = "";
+        var symbol = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
+        
+        var value = this;
+        
+        result = "0x" + symbol[value >> 4] + symbol[value&0x0F];
+        
+        return result;
+    }
+
+    Number.prototype.toBinary = toBinary;
+    Number.prototype.toHex = toHex;
+
+
+    WScript.Arguments.ShowUsage();
+
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+
+    var outputFileName      = "LUT.cpp"
+    var ForWriting    = 2;
+    var TristateFalse = 0;
+    var file = fso.CreateTextFile(outputFileName, true);
+
+
+
+     var pre_declaration = "//字节位串长度查找表, b2 b1 b0 = 位串长度, b3=位串类型,1:'1'串, 0:'0'串\r\n\tstatic unsigned int LUT[256] = \r\n\t{\r\n";
+     var end_declaration ="\r\n\t};\r\n"
+     var contents = "";
+     file.Write(pre_declaration);
+
+    var LUT = new Array(256);
+     for(var i = 0; i < 256; i++)
+     {
+        LUT[i] = new Object();
+        LUT[i].val = 0;
+        LUT[i].bitSuffixLength = 0;
+        LUT[i].comment = "//" + i.toBinary() + "," + i;
+        
+     }
+     
+
+ 
+    var loopCount = 0;
+    LUT[0].bitSuffixLength = 8;
+    LUT[255].bitSuffixLength = 8 + 0x40;
+    
+    for(var i = 1; i <= 7; i++)
+    {
+        //i=1时,
+        //所有形如xxxxxx01的字节对应的串长为1,类型为1；所有形如xxxxxx10的字节对应的串长为1,类型为0
+        //
+         var _1_suffix_value  = Math.pow(2,i) - 1;
+         var mask = Math.pow(2,i + 1) - 1;
+         var _0_suffix_value = ~_1_suffix_value & mask;
+
+          loopCount = Math.pow(2, 8 - i -1);
+         
+         var inc = Math.pow(2,i+1);
+         
+         for(var j = 0; j < loopCount; j++)
+        {
+             LUT[_1_suffix_value].bitSuffixLength = i + 0x40;
+             _1_suffix_value += inc;
+             
+             LUT[_0_suffix_value].bitSuffixLength = i;
+             _0_suffix_value += inc;
+         }
+    }
+     
+   
+
+    // var entry = "\t0x" + LUT[0].val.toString(16).toUpperCase() + "," + LUT[0].comment + " \r\n";
+     //WScript.Echo(entry)
+  
+    for(var index in LUT)
+    {
+       
+        var entry = "\t"+ LUT[index].bitSuffixLength.toHex() + "," + LUT[index].comment + " \r\n";
+        contents += entry;  
+    }
+
+    
+    file.Write(contents);
+    file.Write(end_declaration);
+
+    file.Close();
+
+    WScript.Echo("生成完毕");
+
+
+    WScript.Quit(0);
+
+
+</SCRIPT>
+
+</JOB>
+
+</PACKAGE>
