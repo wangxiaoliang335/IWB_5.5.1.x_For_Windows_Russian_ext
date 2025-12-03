@@ -4141,21 +4141,21 @@ void CIWBDlg::OnRawInput(UINT nInputcode, HRAWINPUT hRawInput)
                 TRACE(_T("Auto Masking Ctrl+Alt+ A\n"));
             }
         }
-        //else if(raw->data.keyboard.VKey == 'C')
-        //{
-        //    short C_state = GetAsyncKeyState('C');
-        //    short ctrl_state = GetAsyncKeyState(VK_CONTROL);
-        //    short shift_state = GetAsyncKeyState(VK_SHIFT);
-        //    short alt_state = GetAsyncKeyState(VK_MENU);
+        else if(raw->data.keyboard.VKey == 'C')
+        {
+            short C_state = GetAsyncKeyState('C');
+            short ctrl_state = GetAsyncKeyState(VK_CONTROL);
+            short shift_state = GetAsyncKeyState(VK_SHIFT);
+            short alt_state = GetAsyncKeyState(VK_MENU);
 
-        //    if((C_state & 0x8000) &&(ctrl_state & 0x8000) && (shift_state & 0x8000 || alt_state & 0x8000))
-        //    {
-        //        //OnMenuAutoCalibrate(ID_AUTOCALIBRATION_17X17GRIDS);
+            if((C_state & 0x8000) &&(ctrl_state & 0x8000) && (shift_state & 0x8000 || alt_state & 0x8000))
+            {
+                //OnMenuAutoCalibrate(ID_AUTOCALIBRATION_17X17GRIDS);
 
-        //        m_AutoCalibrateColsType = DEFAULT_CALIBRATE_PATTERN;
-        //        this->DoAutoCalibrate();
-        //    }
-        //}
+                m_AutoCalibrateColsType = DEFAULT_CALIBRATE_PATTERN;
+                this->DoAutoCalibrate();
+            }
+        }
 
     }
 
