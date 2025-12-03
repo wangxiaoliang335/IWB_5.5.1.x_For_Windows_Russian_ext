@@ -336,7 +336,7 @@ BOOL CSpotListProcessor::SeenByBuddyCamera(const TLightSpot& spotTarget, UINT Ca
         {
             const TLightSpot& buddySpot = pBuddyCameraSpotList[i];
 
-            if (AppearInMergeArea(buddySpot, dwBuddyCameraId))
+            //if (AppearInMergeArea(buddySpot, dwBuddyCameraId))
             
             {//buddySpot也位于融合区, 判断目标点与buddy点之间的距离是否小于融合距离门限
                 int dx = spotTarget.ptPosInScreen.x - buddySpot.ptPosInScreen.x;
@@ -640,7 +640,7 @@ void CSpotListProcessor::ProcessLightSpots()
         BOOL bDoubleScreenTouchMergeTemp = g_tSysCfgData.globalSettings.bDoubleScreenTouchMerge;
              
         
-
+        /*
         //#0号传感器(位于拼接屏的左边)的光斑
         for(int i=0; i<  pSpotListGroup->aryLightSpotsCount[0]; i++)
         {
@@ -668,7 +668,7 @@ void CSpotListProcessor::ProcessLightSpots()
             allLightSpots[nAllLightSpotCount] = spot;
             nAllLightSpotCount ++;
         }
-        
+        */
               
         for (int nCameraIndex = 0; nCameraIndex < MAX_CAMERA_NUMBER; nCameraIndex++)
         {
