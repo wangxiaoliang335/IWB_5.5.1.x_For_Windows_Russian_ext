@@ -635,7 +635,7 @@ void CIWBDlg::InitMenu()
 
     m_oMenu.LoadMenu(IDR_MENU_MAIN);
 
-    InsertParamSettingMenuItem(&m_oMenu, 3);
+    InsertParamSettingMenuItem(&m_oMenu, 0);
 
     if(NULL == m_oMenu.GetSafeHmenu()) return;
 
